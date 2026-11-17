@@ -1,0 +1,33 @@
+import sys, time
+sys.path.insert(0, r'C:\Users\Usuario\Music\proyectos\app-ingecalc\motor')
+from ingecalc.api import resolver
+casos = [
+ "derivar sen(x)^2", "derivar x^5, x, 3", "derivar x^2*y^3, y", "derivar implicita x^2+y^2=25", "recta tangente x^2, 1",
+ "integrar x*e^x", "integrar x^2, x, 0, 3", "integrar x^2 de 0 a 1", "integrar 1/x^2, x, 1, oo", "area x, x^2, 0, 1",
+ "limite sen(x)/x, x->0", "limite 1/x, x->0+", "limite (1+1/x)^x, x->oo", "limite (x^2-4)/(x-2), x->2", "lim x->0 (1-cos(x))/x^2",
+ "taylor e^x, x, 0, 4", "extremos x^3-3x", "extremos x^2+y^2-2x", "sumatoria k^2, k, 1, n", "sumatoria 1/k^2, k, 1, oo",
+ "(x^2-1)/(x-1)", "evaluar sqrt(2)*pi", "expandir (x+1)^3", "factorizar x^3-1", "fracciones parciales (3x+5)/(x^2+3x+2)",
+ "resolver x^2-5x+6=0", "resolver x+y=3; x-y=1", "resolver x^2<4", "mcd 12, 18", "resolver sen(x)=1/2", "resolver e^x=5",
+ "gradiente x^2*y+z", "divergencia [x*y, y*z, z*x]", "rotacional [y, -x, 0]", "laplaciano x^2+y^2", "jacobiano [x^2*y, x+y]",
+ "hessiano x^3+x*y^2", "integral doble x*y, x, 0, 1, y, 0, 2", "integral triple x*y*z, x,0,1, y,0,1, z,0,1", "lagrange x*y; x+y=10",
+ "punto [1,2,3], [4,5,6]", "cruz [1,0,0], [0,1,0]", "norma [3,4]", "angulo [1,0], [0,1]", "proyeccion [1,2], [3,0]",
+ "det [[1,2],[3,4]]", "det [[2,1,3],[0,-1,4],[1,2,0]]", "inversa [[1,2],[3,4]]", "rango [[1,2],[2,4]]", "autovalores [[2,0],[0,3]]",
+ "autovectores [[2,1],[1,2]]", "gauss [[1,1,3],[1,-1,1]]", "[[1,2],[3,4]]*[[0,1],[1,0]]", "[[1,2],[3,4]]^2", "[[1,2],[3,4]]",
+ "edo y''+3y'+2y=0; y(0)=1; y'(0)=0", "edo y'=2xy", "edo y'+y=e^x", "edo y''+4y=sen(x)", "edo y''-2y'+y=0",
+ "laplace t^2*e^(-3t)", "laplace sen(2t)", "laplace inversa 1/(s^2+4)", "laplace inversa (s+1)/(s^2+2s+5)", "laplace inversa e^(-2s)/s",
+ "fourier x, x, -pi, pi, 3", "newton x^3-2x-5, 2", "biseccion x^2-2, 1, 2", "secante x^2-2, 1, 2", "punto fijo cos(x), 1",
+ "trapecio x^2, 0, 1, 4", "simpson x^2, 0, 1, 4", "euler y'=x+y, 0, 1, 0.1, 1", "rk4 y'=x+y, 0, 1, 0.1, 1",
+ "interpolar (0,1), (1,3), (2,2)", "regresion (1,2),(2,4.1),(3,5.9),(4,8.2)",
+ "(3+4i)/(1-2i)", "polar 1+i", "fasor 10@30 + 5@-45", "paralelo 10, 20, 20", "serie 10, 20",
+ "estadistica 2, 4, 4, 5", "binomial 10, 0.5, 3", "poisson 2, 3", "normal 0, 1, -oo, 1.96",
+ "graficar sen(x), cos(x)", "graficar x^2+y^2=9", "graficar polar 1+cos(t)", "graficar parametrica cos(t), sin(2t)",
+ "graficar 3d x^2-y^2", "graficar datos (1,2),(2,3),(3,5)", "x^2+y^2=25", "y''+y=0", "graficar (x^2-1)/(x-2)",
+]
+malos = 0
+t0 = time.time()
+for c in casos:
+    d = resolver(c)
+    ok = d.get('ok')
+    if not ok: malos += 1
+    print(('OK ' if ok else 'ERR'), f"{d['tiempo']:6.2f}s", c, '=>', (d.get('valor') if ok else d.get('error') + ' ' + str(d.get('detalle',''))[-400:]))
+print('errores:', malos, 'de', len(casos), 'total', round(time.time()-t0,1))

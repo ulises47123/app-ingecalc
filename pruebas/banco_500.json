@@ -1,0 +1,4095 @@
+[
+ {
+  "id": 1,
+  "nivel": 1,
+  "tema": "algebra",
+  "entrada": "simplificar (x^2-9)/(x+3)",
+  "modo": "expr",
+  "esperado": "x - 3"
+ },
+ {
+  "id": 2,
+  "nivel": 1,
+  "tema": "ecuaciones",
+  "entrada": "resolver 2x+3=11",
+  "modo": "conjunto",
+  "esperado": "[4]"
+ },
+ {
+  "id": 3,
+  "nivel": 1,
+  "tema": "limites",
+  "entrada": "limite (x^2-4)/(x-2), x->2",
+  "modo": "expr",
+  "esperado": "4"
+ },
+ {
+  "id": 4,
+  "nivel": 1,
+  "tema": "derivadas",
+  "entrada": "derivar x^3",
+  "modo": "expr",
+  "esperado": "3*x**2"
+ },
+ {
+  "id": 5,
+  "nivel": 1,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar 3x^2",
+  "modo": "antiderivada",
+  "esperado": "x**3"
+ },
+ {
+  "id": 6,
+  "nivel": 1,
+  "tema": "integrales definidas",
+  "entrada": "integrar x^2, x, 0, 2",
+  "modo": "expr",
+  "esperado": "8/3"
+ },
+ {
+  "id": 7,
+  "nivel": 1,
+  "tema": "taylor y sumatorias",
+  "entrada": "sumatoria k, k, 1, 100",
+  "modo": "expr",
+  "esperado": "5050"
+ },
+ {
+  "id": 8,
+  "nivel": 1,
+  "tema": "vectores",
+  "entrada": "punto [1,2,3], [4,5,6]",
+  "modo": "expr",
+  "esperado": "32"
+ },
+ {
+  "id": 9,
+  "nivel": 1,
+  "tema": "algebra lineal",
+  "entrada": "det [[2,1],[5,3]]",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 10,
+  "nivel": 1,
+  "tema": "laplace",
+  "entrada": "laplace 1",
+  "modo": "expr",
+  "esperado": "1/s"
+ },
+ {
+  "id": 11,
+  "nivel": 1,
+  "tema": "complejos y circuitos",
+  "entrada": "paralelo 6, 3",
+  "modo": "expr",
+  "esperado": "2"
+ },
+ {
+  "id": 12,
+  "nivel": 1,
+  "tema": "estadistica",
+  "entrada": "estadistica 3, 5, 7, 9",
+  "modo": "numero",
+  "esperado": "6",
+  "tol": 1e-09
+ },
+ {
+  "id": 13,
+  "nivel": 1,
+  "tema": "graficos",
+  "entrada": "graficar x^2-4",
+  "modo": "grafico",
+  "esperado": "2d"
+ },
+ {
+  "id": 14,
+  "nivel": 1,
+  "tema": "algebra",
+  "entrada": "expandir (x+2)^2",
+  "modo": "expr",
+  "esperado": "x**2 + 4*x + 4"
+ },
+ {
+  "id": 15,
+  "nivel": 1,
+  "tema": "ecuaciones",
+  "entrada": "resolver x^2-7x+12=0",
+  "modo": "conjunto",
+  "esperado": "[3, 4]"
+ },
+ {
+  "id": 16,
+  "nivel": 1,
+  "tema": "limites",
+  "entrada": "limite (2x+1)/(x-3), x->oo",
+  "modo": "expr",
+  "esperado": "2"
+ },
+ {
+  "id": 17,
+  "nivel": 1,
+  "tema": "derivadas",
+  "entrada": "derivar 5x^2-3x+7",
+  "modo": "expr",
+  "esperado": "10*x - 3"
+ },
+ {
+  "id": 18,
+  "nivel": 1,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar x^4+2x",
+  "modo": "antiderivada",
+  "esperado": "x**5/5 + x**2"
+ },
+ {
+  "id": 19,
+  "nivel": 1,
+  "tema": "integrales definidas",
+  "entrada": "integrar 2x+1, x, 1, 3",
+  "modo": "expr",
+  "esperado": "10"
+ },
+ {
+  "id": 20,
+  "nivel": 1,
+  "tema": "vectores",
+  "entrada": "norma [1,2,2]",
+  "modo": "expr",
+  "esperado": "3"
+ },
+ {
+  "id": 21,
+  "nivel": 1,
+  "tema": "algebra lineal",
+  "entrada": "transpuesta [[1,2,3],[4,5,6]]",
+  "modo": "matriz",
+  "esperado": "[[1, 4], [2, 5], [3, 6]]"
+ },
+ {
+  "id": 22,
+  "nivel": 1,
+  "tema": "complejos y circuitos",
+  "entrada": "serie 100, 220, 330",
+  "modo": "expr",
+  "esperado": "650"
+ },
+ {
+  "id": 23,
+  "nivel": 1,
+  "tema": "algebra",
+  "entrada": "mcd 84, 120",
+  "modo": "expr",
+  "esperado": "12"
+ },
+ {
+  "id": 24,
+  "nivel": 1,
+  "tema": "ecuaciones",
+  "entrada": "resolver 3(x-2)=x+4",
+  "modo": "conjunto",
+  "esperado": "[5]"
+ },
+ {
+  "id": 25,
+  "nivel": 1,
+  "tema": "derivadas",
+  "entrada": "derivar sen(x)",
+  "modo": "expr",
+  "esperado": "cos(x)"
+ },
+ {
+  "id": 26,
+  "nivel": 1,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar cos(x)",
+  "modo": "antiderivada",
+  "esperado": "sin(x)"
+ },
+ {
+  "id": 27,
+  "nivel": 1,
+  "tema": "algebra lineal",
+  "entrada": "traza [[1,2],[3,4]]",
+  "modo": "expr",
+  "esperado": "5"
+ },
+ {
+  "id": 28,
+  "nivel": 1,
+  "tema": "algebra",
+  "entrada": "mcm 4, 6, 10",
+  "modo": "expr",
+  "esperado": "60"
+ },
+ {
+  "id": 29,
+  "nivel": 1,
+  "tema": "derivadas",
+  "entrada": "derivar e^x+ln(x)",
+  "modo": "expr",
+  "esperado": "exp(x) + 1/x"
+ },
+ {
+  "id": 30,
+  "nivel": 1,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar 1/x",
+  "modo": "antiderivada",
+  "esperado": "log(x)"
+ },
+ {
+  "id": 31,
+  "nivel": 1,
+  "tema": "algebra lineal",
+  "entrada": "[[1,2],[3,4]]+[[5,6],[7,8]]",
+  "modo": "matriz",
+  "esperado": "[[6, 8], [10, 12]]"
+ },
+ {
+  "id": 32,
+  "nivel": 1,
+  "tema": "algebra",
+  "entrada": "(x^2+5x+6)/(x+2)",
+  "modo": "expr",
+  "esperado": "x + 3"
+ },
+ {
+  "id": 33,
+  "nivel": 1,
+  "tema": "algebra lineal",
+  "entrada": "3*[[1,-1],[0,2]]",
+  "modo": "matriz",
+  "esperado": "[[3, -3], [0, 6]]"
+ },
+ {
+  "id": 34,
+  "nivel": 1,
+  "tema": "algebra",
+  "entrada": "expandir (2x-3)(x+4)",
+  "modo": "expr",
+  "esperado": "2*x**2 + 5*x - 12"
+ },
+ {
+  "id": 35,
+  "nivel": 1,
+  "tema": "ecuaciones",
+  "entrada": "resolver x+y=10; x-y=4",
+  "modo": "dict",
+  "esperado": "{x: 7, y: 3}"
+ },
+ {
+  "id": 36,
+  "nivel": 1,
+  "tema": "limites",
+  "entrada": "limite sen(3x)/x, x->0",
+  "modo": "expr",
+  "esperado": "3"
+ },
+ {
+  "id": 37,
+  "nivel": 1,
+  "tema": "derivadas",
+  "entrada": "derivar x*e^x",
+  "modo": "expr",
+  "esperado": "(x + 1)*exp(x)"
+ },
+ {
+  "id": 38,
+  "nivel": 1,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar sen(2x)",
+  "modo": "antiderivada",
+  "esperado": "-cos(2*x)/2"
+ },
+ {
+  "id": 39,
+  "nivel": 1,
+  "tema": "integrales definidas",
+  "entrada": "integrar cos(x) de 0 a pi/2",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 40,
+  "nivel": 1,
+  "tema": "taylor y sumatorias",
+  "entrada": "sumatoria k^2, k, 1, 10",
+  "modo": "expr",
+  "esperado": "385"
+ },
+ {
+  "id": 41,
+  "nivel": 1,
+  "tema": "extremos",
+  "entrada": "extremos x^2-4x+3",
+  "modo": "conjunto",
+  "esperado": "[2]"
+ },
+ {
+  "id": 42,
+  "nivel": 1,
+  "tema": "varias variables",
+  "entrada": "derivar x^2*y+3y^2, x",
+  "modo": "expr",
+  "esperado": "2*x*y"
+ },
+ {
+  "id": 43,
+  "nivel": 1,
+  "tema": "vectores",
+  "entrada": "cruz [1,2,3], [4,5,6]",
+  "modo": "vector",
+  "esperado": "[-3, 6, -3]"
+ },
+ {
+  "id": 44,
+  "nivel": 1,
+  "tema": "algebra lineal",
+  "entrada": "rango [[1,2],[2,4]]",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 45,
+  "nivel": 1,
+  "tema": "edo",
+  "entrada": "edo y'=2x",
+  "modo": "edo_general",
+  "esperado": "x**2 + C1",
+  "edo": "Eq(Derivative(y(x), x), 2*x)"
+ },
+ {
+  "id": 46,
+  "nivel": 1,
+  "tema": "laplace",
+  "entrada": "laplace t",
+  "modo": "expr",
+  "esperado": "1/s**2"
+ },
+ {
+  "id": 47,
+  "nivel": 1,
+  "tema": "complejos y circuitos",
+  "entrada": "paralelo 4, 6, 12",
+  "modo": "expr",
+  "esperado": "2"
+ },
+ {
+  "id": 48,
+  "nivel": 1,
+  "tema": "graficos",
+  "entrada": "graficar e^x, ln(x)",
+  "modo": "grafico",
+  "esperado": "2d"
+ },
+ {
+  "id": 49,
+  "nivel": 1,
+  "tema": "algebra",
+  "entrada": "factorizar x^2-5x+6",
+  "modo": "expr",
+  "esperado": "(x - 2)*(x - 3)"
+ },
+ {
+  "id": 50,
+  "nivel": 1,
+  "tema": "ecuaciones",
+  "entrada": "resolver 2x+3y=12; x-y=1",
+  "modo": "dict",
+  "esperado": "{x: 3, y: 2}"
+ },
+ {
+  "id": 51,
+  "nivel": 2,
+  "tema": "limites",
+  "entrada": "limite 1/x^2, x->0",
+  "modo": "expr",
+  "esperado": "oo"
+ },
+ {
+  "id": 52,
+  "nivel": 2,
+  "tema": "derivadas",
+  "entrada": "derivar cos(x)^3",
+  "modo": "expr",
+  "esperado": "-3*sin(x)*cos(x)**2"
+ },
+ {
+  "id": 53,
+  "nivel": 2,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar sqrt(x)",
+  "modo": "antiderivada",
+  "esperado": "2*x**(3/2)/3"
+ },
+ {
+  "id": 54,
+  "nivel": 2,
+  "tema": "integrales definidas",
+  "entrada": "integrar e^x, x, 0, 1",
+  "modo": "expr",
+  "esperado": "E - 1"
+ },
+ {
+  "id": 55,
+  "nivel": 2,
+  "tema": "taylor y sumatorias",
+  "entrada": "taylor cos(x), x, 0, 4",
+  "modo": "expr",
+  "esperado": "x**4/24 - x**2/2 + 1"
+ },
+ {
+  "id": 56,
+  "nivel": 2,
+  "tema": "varias variables",
+  "entrada": "gradiente x^2+y^2",
+  "modo": "vector",
+  "esperado": "[2*x, 2*y]"
+ },
+ {
+  "id": 57,
+  "nivel": 2,
+  "tema": "vectores",
+  "entrada": "norma [1,-2,3,-4]",
+  "modo": "expr",
+  "esperado": "sqrt(30)"
+ },
+ {
+  "id": 58,
+  "nivel": 2,
+  "tema": "algebra lineal",
+  "entrada": "[[1,2],[3,4]]*[[2,0],[1,3]]",
+  "modo": "matriz",
+  "esperado": "[[4, 6], [10, 12]]"
+ },
+ {
+  "id": 59,
+  "nivel": 2,
+  "tema": "edo",
+  "entrada": "edo y'=3y",
+  "modo": "edo_general",
+  "esperado": "C1*exp(3*x)",
+  "edo": "Eq(Derivative(y(x), x), 3*y(x))"
+ },
+ {
+  "id": 60,
+  "nivel": 2,
+  "tema": "laplace",
+  "entrada": "laplace e^(3t)",
+  "modo": "expr",
+  "esperado": "1/(s - 3)"
+ },
+ {
+  "id": 61,
+  "nivel": 2,
+  "tema": "complejos y circuitos",
+  "entrada": "(2+3i)(1-i)",
+  "modo": "expr",
+  "esperado": "5 + I"
+ },
+ {
+  "id": 62,
+  "nivel": 2,
+  "tema": "graficos",
+  "entrada": "graficar tg(x)",
+  "modo": "grafico",
+  "esperado": "2d"
+ },
+ {
+  "id": 63,
+  "nivel": 2,
+  "tema": "algebra",
+  "entrada": "factorizar 2x^2+7x+3",
+  "modo": "expr",
+  "esperado": "(2*x + 1)*(x + 3)"
+ },
+ {
+  "id": 64,
+  "nivel": 2,
+  "tema": "ecuaciones",
+  "entrada": "resolver x^2+2x-15",
+  "modo": "conjunto",
+  "esperado": "[-5, 3]"
+ },
+ {
+  "id": 65,
+  "nivel": 2,
+  "tema": "limites",
+  "entrada": "limite (3x^2-x)/(5x^2+2), x->oo",
+  "modo": "expr",
+  "esperado": "3/5"
+ },
+ {
+  "id": 66,
+  "nivel": 2,
+  "tema": "derivadas",
+  "entrada": "derivar tg(x)",
+  "modo": "expr",
+  "esperado": "1/cos(x)**2"
+ },
+ {
+  "id": 67,
+  "nivel": 2,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar 1/(1+x^2)",
+  "modo": "antiderivada",
+  "esperado": "atan(x)"
+ },
+ {
+  "id": 68,
+  "nivel": 2,
+  "tema": "integrales definidas",
+  "entrada": "integrar 1/x de 1 a e",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 69,
+  "nivel": 2,
+  "tema": "vectores",
+  "entrada": "punto [2,-1,3], [1,4,-2]",
+  "modo": "expr",
+  "esperado": "-8"
+ },
+ {
+  "id": 70,
+  "nivel": 2,
+  "tema": "algebra lineal",
+  "entrada": "det [[1,2,3],[4,5,6],[7,8,9]]",
+  "modo": "expr",
+  "esperado": "0"
+ },
+ {
+  "id": 71,
+  "nivel": 2,
+  "tema": "edo",
+  "entrada": "edo y'=x^2; y(0)=1",
+  "modo": "expr",
+  "esperado": "x**3/3 + 1",
+  "edo": "Eq(Derivative(y(x), x), x**2)"
+ },
+ {
+  "id": 72,
+  "nivel": 2,
+  "tema": "laplace",
+  "entrada": "laplace sen(2t)",
+  "modo": "expr",
+  "esperado": "2/(s**2 + 4)"
+ },
+ {
+  "id": 73,
+  "nivel": 2,
+  "tema": "complejos y circuitos",
+  "entrada": "abs(3-4i)",
+  "modo": "expr",
+  "esperado": "5"
+ },
+ {
+  "id": 74,
+  "nivel": 2,
+  "tema": "graficos",
+  "entrada": "graficar abs(x-1)",
+  "modo": "grafico",
+  "esperado": "2d"
+ },
+ {
+  "id": 75,
+  "nivel": 2,
+  "tema": "algebra",
+  "entrada": "evaluar sen(pi/6)+cos(pi/3)",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 76,
+  "nivel": 2,
+  "tema": "ecuaciones",
+  "entrada": "resolver 2x^2-3x-2=0",
+  "modo": "conjunto",
+  "esperado": "[2, -1/2]"
+ },
+ {
+  "id": 77,
+  "nivel": 2,
+  "tema": "limites",
+  "entrada": "limite (e^x-1)/x, x->0",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 78,
+  "nivel": 2,
+  "tema": "derivadas",
+  "entrada": "derivar ln(x^2+1)",
+  "modo": "expr",
+  "esperado": "2*x/(x**2 + 1)"
+ },
+ {
+  "id": 79,
+  "nivel": 2,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar 4t^3-2t, t",
+  "modo": "antiderivada",
+  "esperado": "t**4 - t**2"
+ },
+ {
+  "id": 80,
+  "nivel": 2,
+  "tema": "integrales definidas",
+  "entrada": "integrar sen(x), x, 0, pi",
+  "modo": "expr",
+  "esperado": "2"
+ },
+ {
+  "id": 81,
+  "nivel": 2,
+  "tema": "algebra lineal",
+  "entrada": "[[2,1],[1,1]]^2",
+  "modo": "matriz",
+  "esperado": "[[5, 3], [3, 2]]"
+ },
+ {
+  "id": 82,
+  "nivel": 2,
+  "tema": "laplace",
+  "entrada": "laplace inversa 1/(s-5)",
+  "modo": "expr",
+  "esperado": "exp(5*t)"
+ },
+ {
+  "id": 83,
+  "nivel": 2,
+  "tema": "graficos",
+  "entrada": "graficar datos (1,2), (2,3), (3,5), (4,4)",
+  "modo": "grafico",
+  "esperado": "datos"
+ },
+ {
+  "id": 84,
+  "nivel": 2,
+  "tema": "algebra",
+  "entrada": "evaluar log(1000)+ln(e^2)",
+  "modo": "expr",
+  "esperado": "5"
+ },
+ {
+  "id": 85,
+  "nivel": 2,
+  "tema": "ecuaciones",
+  "entrada": "resolver 3x-5<7",
+  "modo": "intervalo",
+  "esperado": "Interval.open(-oo, 4)"
+ },
+ {
+  "id": 86,
+  "nivel": 2,
+  "tema": "limites",
+  "entrada": "limite (x^3-27)/(x-3), x->3",
+  "modo": "expr",
+  "esperado": "27"
+ },
+ {
+  "id": 87,
+  "nivel": 2,
+  "tema": "derivadas",
+  "entrada": "derivar x^4, x, 2",
+  "modo": "expr",
+  "esperado": "12*x**2"
+ },
+ {
+  "id": 88,
+  "nivel": 2,
+  "tema": "algebra lineal",
+  "entrada": "inversa [[2,0,0],[0,4,0],[0,0,5]]",
+  "modo": "matriz",
+  "esperado": "[[1/2, 0, 0], [0, 1/4, 0], [0, 0, 1/5]]"
+ },
+ {
+  "id": 89,
+  "nivel": 2,
+  "tema": "algebra",
+  "entrada": "simplificar (x^2-4)/(x^2+4x+4)",
+  "modo": "expr",
+  "esperado": "(x - 2)/(x + 2)"
+ },
+ {
+  "id": 90,
+  "nivel": 2,
+  "tema": "algebra",
+  "entrada": "factorizar x^3-8",
+  "modo": "expr",
+  "esperado": "(x - 2)*(x**2 + 2*x + 4)"
+ },
+ {
+  "id": 91,
+  "nivel": 2,
+  "tema": "ecuaciones",
+  "entrada": "resolver x^3-6x^2+11x-6=0",
+  "modo": "conjunto",
+  "esperado": "[1, 2, 3]"
+ },
+ {
+  "id": 92,
+  "nivel": 2,
+  "tema": "limites",
+  "entrada": "limite (sqrt(x)-2)/(x-4), x->4",
+  "modo": "expr",
+  "esperado": "1/4"
+ },
+ {
+  "id": 93,
+  "nivel": 2,
+  "tema": "derivadas",
+  "entrada": "derivar x^2*sen(x)",
+  "modo": "expr",
+  "esperado": "2*x*sin(x) + x**2*cos(x)"
+ },
+ {
+  "id": 94,
+  "nivel": 2,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar x*cos(x)",
+  "modo": "antiderivada",
+  "esperado": "x*sin(x) + cos(x)"
+ },
+ {
+  "id": 95,
+  "nivel": 2,
+  "tema": "integrales definidas",
+  "entrada": "area 4-x^2, 0, -2, 2",
+  "modo": "expr",
+  "esperado": "32/3"
+ },
+ {
+  "id": 96,
+  "nivel": 2,
+  "tema": "taylor y sumatorias",
+  "entrada": "taylor sen(x), x, 0, 5",
+  "modo": "expr",
+  "esperado": "x - x**3/6 + x**5/120"
+ },
+ {
+  "id": 97,
+  "nivel": 2,
+  "tema": "extremos",
+  "entrada": "extremos x^3-12x",
+  "modo": "conjunto",
+  "esperado": "[-2, 2]"
+ },
+ {
+  "id": 98,
+  "nivel": 2,
+  "tema": "varias variables",
+  "entrada": "gradiente x*y*z",
+  "modo": "vector",
+  "esperado": "[y*z, x*z, x*y]"
+ },
+ {
+  "id": 99,
+  "nivel": 2,
+  "tema": "vectores",
+  "entrada": "angulo [1,1], [1,0]",
+  "modo": "expr",
+  "esperado": "pi/4"
+ },
+ {
+  "id": 100,
+  "nivel": 2,
+  "tema": "algebra lineal",
+  "entrada": "det [[1,2,3],[0,1,4],[5,6,0]]",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 101,
+  "nivel": 3,
+  "tema": "edo",
+  "entrada": "edo y'=x*y",
+  "modo": "edo_general",
+  "esperado": "C1*exp(x**2/2)",
+  "edo": "Eq(Derivative(y(x), x), x*y(x))"
+ },
+ {
+  "id": 102,
+  "nivel": 3,
+  "tema": "laplace",
+  "entrada": "laplace t*e^(2t)",
+  "modo": "expr",
+  "esperado": "1/(s - 2)**2"
+ },
+ {
+  "id": 103,
+  "nivel": 3,
+  "tema": "metodos numericos",
+  "entrada": "newton x^2-2, 1",
+  "modo": "numero",
+  "esperado": "sqrt(2)",
+  "tol": 1e-06
+ },
+ {
+  "id": 104,
+  "nivel": 3,
+  "tema": "complejos y circuitos",
+  "entrada": "(1+i)^8",
+  "modo": "expr",
+  "esperado": "16"
+ },
+ {
+  "id": 105,
+  "nivel": 3,
+  "tema": "estadistica",
+  "entrada": "estadistica 1, 2, 3, 4, 5",
+  "modo": "clave",
+  "esperado": "5/2",
+  "tol": 1e-09,
+  "clave": "varianza"
+ },
+ {
+  "id": 106,
+  "nivel": 3,
+  "tema": "graficos",
+  "entrada": "graficar x^3-3x, 3x^2-3",
+  "modo": "grafico",
+  "esperado": "2d"
+ },
+ {
+  "id": 107,
+  "nivel": 3,
+  "tema": "algebra",
+  "entrada": "factorizar x^4-16",
+  "modo": "expr",
+  "esperado": "(x - 2)*(x + 2)*(x**2 + 4)"
+ },
+ {
+  "id": 108,
+  "nivel": 3,
+  "tema": "ecuaciones",
+  "entrada": "resolver x^2<9",
+  "modo": "intervalo",
+  "esperado": "Interval.open(-3, 3)"
+ },
+ {
+  "id": 109,
+  "nivel": 3,
+  "tema": "limites",
+  "entrada": "limite (1-cos(x))/x^2, x->0",
+  "modo": "expr",
+  "esperado": "1/2"
+ },
+ {
+  "id": 110,
+  "nivel": 3,
+  "tema": "derivadas",
+  "entrada": "derivar (x+1)/(x-1)",
+  "modo": "expr",
+  "esperado": "-2/(x - 1)**2"
+ },
+ {
+  "id": 111,
+  "nivel": 3,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar x*e^(2x)",
+  "modo": "antiderivada",
+  "esperado": "(2*x - 1)*exp(2*x)/4"
+ },
+ {
+  "id": 112,
+  "nivel": 3,
+  "tema": "integrales definidas",
+  "entrada": "area x^2, x^3, 0, 1",
+  "modo": "expr",
+  "esperado": "1/12"
+ },
+ {
+  "id": 113,
+  "nivel": 3,
+  "tema": "taylor y sumatorias",
+  "entrada": "taylor ln(1+x), x, 0, 4",
+  "modo": "expr",
+  "esperado": "x - x**2/2 + x**3/3 - x**4/4"
+ },
+ {
+  "id": 114,
+  "nivel": 3,
+  "tema": "extremos",
+  "entrada": "extremos x^3-6x^2+9x+1",
+  "modo": "conjunto",
+  "esperado": "[1, 3]"
+ },
+ {
+  "id": 115,
+  "nivel": 3,
+  "tema": "varias variables",
+  "entrada": "gradiente e^x*sen(y)",
+  "modo": "vector",
+  "esperado": "[exp(x)*sin(y), exp(x)*cos(y)]"
+ },
+ {
+  "id": 116,
+  "nivel": 3,
+  "tema": "vectores",
+  "entrada": "proyeccion [2,3], [1,1]",
+  "modo": "vector",
+  "esperado": "[5/2, 5/2]"
+ },
+ {
+  "id": 117,
+  "nivel": 3,
+  "tema": "algebra lineal",
+  "entrada": "inversa [[2,1],[5,3]]",
+  "modo": "matriz",
+  "esperado": "[[3, -1], [-5, 2]]"
+ },
+ {
+  "id": 118,
+  "nivel": 3,
+  "tema": "edo",
+  "entrada": "edo y''+y=0",
+  "modo": "edo_general",
+  "esperado": "C1*cos(x) + C2*sin(x)",
+  "edo": "Eq(y(x) + Derivative(y(x), (x, 2)), 0)"
+ },
+ {
+  "id": 119,
+  "nivel": 3,
+  "tema": "laplace",
+  "entrada": "laplace senh(2t)",
+  "modo": "expr",
+  "esperado": "2/(s**2 - 4)"
+ },
+ {
+  "id": 120,
+  "nivel": 3,
+  "tema": "metodos numericos",
+  "entrada": "biseccion x^2-3, 1, 2",
+  "modo": "numero",
+  "esperado": "sqrt(3)",
+  "tol": 1e-06
+ },
+ {
+  "id": 121,
+  "nivel": 3,
+  "tema": "complejos y circuitos",
+  "entrada": "(5+5i)/(1+2i)",
+  "modo": "expr",
+  "esperado": "3 - I"
+ },
+ {
+  "id": 122,
+  "nivel": 3,
+  "tema": "estadistica",
+  "entrada": "binomial 5, 0.5, 2",
+  "modo": "numero",
+  "esperado": "5/16",
+  "tol": 1e-09
+ },
+ {
+  "id": 123,
+  "nivel": 3,
+  "tema": "graficos",
+  "entrada": "graficar x^2/4+y^2/9=1",
+  "modo": "grafico",
+  "esperado": "implicita"
+ },
+ {
+  "id": 124,
+  "nivel": 3,
+  "tema": "algebra",
+  "entrada": "fracciones parciales 1/(x^2-1)",
+  "modo": "expr",
+  "esperado": "1/(2*(x - 1)) - 1/(2*(x + 1))"
+ },
+ {
+  "id": 125,
+  "nivel": 3,
+  "tema": "ecuaciones",
+  "entrada": "resolver x^2-x-6>=0",
+  "modo": "intervalo",
+  "esperado": "Union(Interval(-oo, -2), Interval(3, oo))"
+ },
+ {
+  "id": 126,
+  "nivel": 3,
+  "tema": "limites",
+  "entrada": "limite (1+1/x)^(2x), x->oo",
+  "modo": "expr",
+  "esperado": "exp(2)"
+ },
+ {
+  "id": 127,
+  "nivel": 3,
+  "tema": "derivadas",
+  "entrada": "derivar log(x)",
+  "modo": "expr",
+  "esperado": "1/(x*log(10))"
+ },
+ {
+  "id": 128,
+  "nivel": 3,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar ln(x)",
+  "modo": "antiderivada",
+  "esperado": "x*log(x) - x"
+ },
+ {
+  "id": 129,
+  "nivel": 3,
+  "tema": "integrales definidas",
+  "entrada": "integrar x*e^x, x, 0, 1",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 130,
+  "nivel": 3,
+  "tema": "taylor y sumatorias",
+  "entrada": "sumatoria 1/2^k, k, 0, oo",
+  "modo": "expr",
+  "esperado": "2"
+ },
+ {
+  "id": 131,
+  "nivel": 3,
+  "tema": "varias variables",
+  "entrada": "divergencia [x^2, y^2, z^2]",
+  "modo": "expr",
+  "esperado": "2*x + 2*y + 2*z"
+ },
+ {
+  "id": 132,
+  "nivel": 3,
+  "tema": "vectores",
+  "entrada": "angulo [1,2,2], [2,-2,1]",
+  "modo": "expr",
+  "esperado": "pi/2"
+ },
+ {
+  "id": 133,
+  "nivel": 3,
+  "tema": "algebra lineal",
+  "entrada": "autovalores [[4,1],[2,3]]",
+  "modo": "conjunto",
+  "esperado": "[2, 5]"
+ },
+ {
+  "id": 134,
+  "nivel": 3,
+  "tema": "edo",
+  "entrada": "edo y'=2y; y(0)=3",
+  "modo": "expr",
+  "esperado": "3*exp(2*x)",
+  "edo": "Eq(Derivative(y(x), x), 2*y(x))"
+ },
+ {
+  "id": 135,
+  "nivel": 3,
+  "tema": "laplace",
+  "entrada": "laplace 3-2t+4t^2",
+  "modo": "expr",
+  "esperado": "3/s - 2/s**2 + 8/s**3"
+ },
+ {
+  "id": 136,
+  "nivel": 3,
+  "tema": "metodos numericos",
+  "entrada": "regresion (1,2), (2,4), (3,6)",
+  "modo": "expr",
+  "esperado": "2*x"
+ },
+ {
+  "id": 137,
+  "nivel": 3,
+  "tema": "complejos y circuitos",
+  "entrada": "polar 3i",
+  "modo": "vector",
+  "esperado": "[3, pi/2]"
+ },
+ {
+  "id": 138,
+  "nivel": 3,
+  "tema": "graficos",
+  "entrada": "graficar x^2-y^2=1",
+  "modo": "grafico",
+  "esperado": "implicita"
+ },
+ {
+  "id": 139,
+  "nivel": 3,
+  "tema": "algebra",
+  "entrada": "fracciones parciales (5x-1)/(x^2-x-2)",
+  "modo": "expr",
+  "esperado": "3/(x - 2) + 2/(x + 1)"
+ },
+ {
+  "id": 140,
+  "nivel": 3,
+  "tema": "ecuaciones",
+  "entrada": "resolver e^x=5",
+  "modo": "conjunto",
+  "esperado": "[log(5)]"
+ },
+ {
+  "id": 141,
+  "nivel": 3,
+  "tema": "limites",
+  "entrada": "limite 1/(x-2), x->2-",
+  "modo": "expr",
+  "esperado": "-oo"
+ },
+ {
+  "id": 142,
+  "nivel": 3,
+  "tema": "derivadas",
+  "entrada": "derivar arctg(2x)",
+  "modo": "expr",
+  "esperado": "2/(4*x**2 + 1)"
+ },
+ {
+  "id": 143,
+  "nivel": 3,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar x/(x^2+1)",
+  "modo": "antiderivada",
+  "esperado": "log(x**2 + 1)/2"
+ },
+ {
+  "id": 144,
+  "nivel": 3,
+  "tema": "integrales definidas",
+  "entrada": "integrar 1/(1+x^2), x, 0, 1",
+  "modo": "expr",
+  "esperado": "pi/4"
+ },
+ {
+  "id": 145,
+  "nivel": 3,
+  "tema": "taylor y sumatorias",
+  "entrada": "sumatoria k, k, 1, n",
+  "modo": "expr",
+  "esperado": "n*(n + 1)/2"
+ },
+ {
+  "id": 146,
+  "nivel": 3,
+  "tema": "varias variables",
+  "entrada": "rotacional [-y, x, 0]",
+  "modo": "vector",
+  "esperado": "[0, 0, 2]"
+ },
+ {
+  "id": 147,
+  "nivel": 3,
+  "tema": "vectores",
+  "entrada": "cruz [2,-1,1], [1,3,-2]",
+  "modo": "vector",
+  "esperado": "[-1, 5, 7]"
+ },
+ {
+  "id": 148,
+  "nivel": 3,
+  "tema": "algebra lineal",
+  "entrada": "[[1,1],[0,1]]^3",
+  "modo": "matriz",
+  "esperado": "[[1, 3], [0, 1]]"
+ },
+ {
+  "id": 149,
+  "nivel": 3,
+  "tema": "laplace",
+  "entrada": "laplace inversa 6/s^4",
+  "modo": "expr",
+  "esperado": "t**3"
+ },
+ {
+  "id": 150,
+  "nivel": 3,
+  "tema": "complejos y circuitos",
+  "entrada": "fasor 10@0 + 10@90",
+  "modo": "numero",
+  "esperado": "10 + 10*I",
+  "tol": 1e-06
+ },
+ {
+  "id": 151,
+  "nivel": 4,
+  "tema": "graficos",
+  "entrada": "graficar polar 1-sen(t)",
+  "modo": "grafico",
+  "esperado": "polar"
+ },
+ {
+  "id": 152,
+  "nivel": 4,
+  "tema": "algebra",
+  "entrada": "simplificar sen(x)^2+cos(x)^2+tg(x)*cos(x)",
+  "modo": "expr",
+  "esperado": "sin(x) + 1"
+ },
+ {
+  "id": 153,
+  "nivel": 4,
+  "tema": "ecuaciones",
+  "entrada": "resolver log(x)=2",
+  "modo": "conjunto",
+  "esperado": "[100]"
+ },
+ {
+  "id": 154,
+  "nivel": 4,
+  "tema": "limites",
+  "entrada": "limite ln(x)/(x-1), x->1",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 155,
+  "nivel": 4,
+  "tema": "derivadas",
+  "entrada": "derivar e^(-x^2)",
+  "modo": "expr",
+  "esperado": "-2*x*exp(-x**2)"
+ },
+ {
+  "id": 156,
+  "nivel": 4,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar tg(x)",
+  "modo": "antiderivada",
+  "esperado": "-log(cos(x))"
+ },
+ {
+  "id": 157,
+  "nivel": 4,
+  "tema": "integrales definidas",
+  "entrada": "integrar sqrt(x)*(1+x), x, 0, 1",
+  "modo": "expr",
+  "esperado": "16/15"
+ },
+ {
+  "id": 158,
+  "nivel": 4,
+  "tema": "varias variables",
+  "entrada": "integral doble x+y, x, 0, 1, y, 0, 1",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 159,
+  "nivel": 4,
+  "tema": "vectores",
+  "entrada": "norma [1/2, sqrt(3)/2]",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 160,
+  "nivel": 4,
+  "tema": "algebra lineal",
+  "entrada": "rango [[1,2,3],[4,5,6],[7,8,9]]",
+  "modo": "expr",
+  "esperado": "2"
+ },
+ {
+  "id": 161,
+  "nivel": 4,
+  "tema": "laplace",
+  "entrada": "laplace inversa s/(s^2+16)",
+  "modo": "expr",
+  "esperado": "cos(4*t)"
+ },
+ {
+  "id": 162,
+  "nivel": 4,
+  "tema": "graficos",
+  "entrada": "graficar parametrica 3cos(t), 2sen(t)",
+  "modo": "grafico",
+  "esperado": "parametrica"
+ },
+ {
+  "id": 163,
+  "nivel": 4,
+  "tema": "algebra",
+  "entrada": "mcd 391, 299",
+  "modo": "expr",
+  "esperado": "23"
+ },
+ {
+  "id": 164,
+  "nivel": 4,
+  "tema": "ecuaciones",
+  "entrada": "resolver x+y+z=6; x-y+z=2; 2x+y-z=1",
+  "modo": "dict",
+  "esperado": "{x: 1, y: 2, z: 3}"
+ },
+ {
+  "id": 165,
+  "nivel": 4,
+  "tema": "limites",
+  "entrada": "limite (sqrt(x+9)-3)/x, x->0",
+  "modo": "expr",
+  "esperado": "1/6"
+ },
+ {
+  "id": 166,
+  "nivel": 4,
+  "tema": "derivadas",
+  "entrada": "derivar x^3*y^2+sen(y), y",
+  "modo": "expr",
+  "esperado": "2*x**3*y + cos(y)"
+ },
+ {
+  "id": 167,
+  "nivel": 4,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar 1/sqrt(1-x^2)",
+  "modo": "antiderivada",
+  "esperado": "asin(x)"
+ },
+ {
+  "id": 168,
+  "nivel": 4,
+  "tema": "varias variables",
+  "entrada": "integral doble x^2*y, x, 0, 2, y, 0, 3",
+  "modo": "expr",
+  "esperado": "12"
+ },
+ {
+  "id": 169,
+  "nivel": 4,
+  "tema": "algebra lineal",
+  "entrada": "autovalores [[2,0,0],[1,3,0],[4,5,6]]",
+  "modo": "conjunto",
+  "esperado": "[2, 3, 6]"
+ },
+ {
+  "id": 170,
+  "nivel": 4,
+  "tema": "limites",
+  "entrada": "limite arctg(x), x->-oo",
+  "modo": "expr",
+  "esperado": "-pi/2"
+ },
+ {
+  "id": 171,
+  "nivel": 4,
+  "tema": "derivadas",
+  "entrada": "derivar implicita x*y=6",
+  "modo": "expr",
+  "esperado": "-y/x"
+ },
+ {
+  "id": 172,
+  "nivel": 4,
+  "tema": "varias variables",
+  "entrada": "derivar x*e^(x*y), y",
+  "modo": "expr",
+  "esperado": "x**2*exp(x*y)"
+ },
+ {
+  "id": 173,
+  "nivel": 4,
+  "tema": "algebra lineal",
+  "entrada": "[[1,0,2],[0,1,1]]*[[1,2],[0,1],[3,0]]",
+  "modo": "matriz",
+  "esperado": "[[7, 2], [3, 1]]"
+ },
+ {
+  "id": 174,
+  "nivel": 4,
+  "tema": "derivadas",
+  "entrada": "recta tangente x^3, 2",
+  "modo": "expr",
+  "esperado": "12*x - 16"
+ },
+ {
+  "id": 175,
+  "nivel": 4,
+  "tema": "varias variables",
+  "entrada": "derivar ln(x^2+y^2), x",
+  "modo": "expr",
+  "esperado": "2*x/(x**2 + y**2)"
+ },
+ {
+  "id": 176,
+  "nivel": 4,
+  "tema": "algebra lineal",
+  "entrada": "[[1,2],[3,4]]*[[4,-2],[-3,1]]",
+  "modo": "matriz",
+  "esperado": "[[-2, 0], [0, -2]]"
+ },
+ {
+  "id": 177,
+  "nivel": 4,
+  "tema": "derivadas",
+  "entrada": "recta tangente sqrt(x), 4",
+  "modo": "expr",
+  "esperado": "x/4 + 1"
+ },
+ {
+  "id": 178,
+  "nivel": 4,
+  "tema": "derivadas",
+  "entrada": "derivar (x^2+1)^10",
+  "modo": "expr",
+  "esperado": "20*x*(x**2 + 1)**9"
+ },
+ {
+  "id": 179,
+  "nivel": 4,
+  "tema": "derivadas",
+  "entrada": "derivar 2^x",
+  "modo": "expr",
+  "esperado": "2**x*log(2)"
+ },
+ {
+  "id": 180,
+  "nivel": 4,
+  "tema": "algebra",
+  "entrada": "expandir (x+y)^3",
+  "modo": "expr",
+  "esperado": "x**3 + 3*x**2*y + 3*x*y**2 + y**3"
+ },
+ {
+  "id": 181,
+  "nivel": 4,
+  "tema": "ecuaciones",
+  "entrada": "resolver sqrt(x+3)=x-3",
+  "modo": "conjunto",
+  "esperado": "[6]"
+ },
+ {
+  "id": 182,
+  "nivel": 4,
+  "tema": "limites",
+  "entrada": "limite x*ln(x), x->0+",
+  "modo": "expr",
+  "esperado": "0"
+ },
+ {
+  "id": 183,
+  "nivel": 4,
+  "tema": "derivadas",
+  "entrada": "derivar ln(sen(x))",
+  "modo": "expr",
+  "esperado": "cos(x)/sin(x)"
+ },
+ {
+  "id": 184,
+  "nivel": 4,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar 1/(x^2-1)",
+  "modo": "antiderivada",
+  "esperado": "log(x - 1)/2 - log(x + 1)/2"
+ },
+ {
+  "id": 185,
+  "nivel": 4,
+  "tema": "integrales definidas",
+  "entrada": "integrar e^(-x), x, 0, oo",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 186,
+  "nivel": 4,
+  "tema": "taylor y sumatorias",
+  "entrada": "taylor sqrt(x), x, 4, 2",
+  "modo": "expr",
+  "esperado": "2 + (x - 4)/4 - (x - 4)**2/64"
+ },
+ {
+  "id": 187,
+  "nivel": 4,
+  "tema": "extremos",
+  "entrada": "extremos x^4-8x^2",
+  "modo": "conjunto",
+  "esperado": "[-2, 0, 2]"
+ },
+ {
+  "id": 188,
+  "nivel": 4,
+  "tema": "varias variables",
+  "entrada": "laplaciano x^3-3x*y^2",
+  "modo": "expr",
+  "esperado": "0"
+ },
+ {
+  "id": 189,
+  "nivel": 4,
+  "tema": "vectores",
+  "entrada": "angulo [1,0,1], [0,1,1]",
+  "modo": "expr",
+  "esperado": "pi/3"
+ },
+ {
+  "id": 190,
+  "nivel": 4,
+  "tema": "algebra lineal",
+  "entrada": "gauss [[1,2,5],[3,-1,1]]",
+  "modo": "matriz",
+  "esperado": "[[1, 0, 1], [0, 1, 2]]"
+ },
+ {
+  "id": 191,
+  "nivel": 4,
+  "tema": "edo",
+  "entrada": "edo y''-5y'+6y=0",
+  "modo": "edo_general",
+  "esperado": "C1*exp(2*x) + C2*exp(3*x)",
+  "edo": "Eq(6*y(x) - 5*Derivative(y(x), x) + Derivative(y(x), (x, 2)), 0)"
+ },
+ {
+  "id": 192,
+  "nivel": 4,
+  "tema": "laplace",
+  "entrada": "laplace e^(-t)*sen(2t)",
+  "modo": "expr",
+  "esperado": "2/((s + 1)**2 + 4)"
+ },
+ {
+  "id": 193,
+  "nivel": 4,
+  "tema": "metodos numericos",
+  "entrada": "newton x^3-x-1, 1.5",
+  "modo": "numero",
+  "esperado": "1.32471795724475",
+  "tol": 1e-06
+ },
+ {
+  "id": 194,
+  "nivel": 4,
+  "tema": "complejos y circuitos",
+  "entrada": "polar -1+sqrt(3)i",
+  "modo": "vector",
+  "esperado": "[2, 2*pi/3]"
+ },
+ {
+  "id": 195,
+  "nivel": 4,
+  "tema": "estadistica",
+  "entrada": "estadistica 2, 4, 4, 4, 5, 5, 7, 9",
+  "modo": "clave",
+  "esperado": "2",
+  "tol": 1e-09,
+  "clave": "desvio_pob"
+ },
+ {
+  "id": 196,
+  "nivel": 4,
+  "tema": "graficos",
+  "entrada": "graficar y^2=x^3-x",
+  "modo": "grafico",
+  "esperado": "implicita"
+ },
+ {
+  "id": 197,
+  "nivel": 4,
+  "tema": "algebra",
+  "entrada": "factorizar x^3-2x^2-5x+6",
+  "modo": "expr",
+  "esperado": "(x - 1)*(x - 3)*(x + 2)"
+ },
+ {
+  "id": 198,
+  "nivel": 4,
+  "tema": "ecuaciones",
+  "entrada": "resolver x^4-5x^2+4=0",
+  "modo": "conjunto",
+  "esperado": "[-2, -1, 1, 2]"
+ },
+ {
+  "id": 199,
+  "nivel": 4,
+  "tema": "limites",
+  "entrada": "limite sqrt(x^2+1)-x, x->oo",
+  "modo": "expr",
+  "esperado": "0"
+ },
+ {
+  "id": 200,
+  "nivel": 4,
+  "tema": "derivadas",
+  "entrada": "derivar arcsen(x^2)",
+  "modo": "expr",
+  "esperado": "2*x/sqrt(1 - x**4)"
+ },
+ {
+  "id": 201,
+  "nivel": 5,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar x^2*ln(x)",
+  "modo": "antiderivada",
+  "esperado": "x**3*log(x)/3 - x**3/9"
+ },
+ {
+  "id": 202,
+  "nivel": 5,
+  "tema": "integrales definidas",
+  "entrada": "integrar x*sen(x), x, 0, pi",
+  "modo": "expr",
+  "esperado": "pi"
+ },
+ {
+  "id": 203,
+  "nivel": 5,
+  "tema": "taylor y sumatorias",
+  "entrada": "taylor ln(x), x, 1, 3",
+  "modo": "expr",
+  "esperado": "(x - 1) - (x - 1)**2/2 + (x - 1)**3/3"
+ },
+ {
+  "id": 204,
+  "nivel": 5,
+  "tema": "extremos",
+  "entrada": "extremos x*e^(-x)",
+  "modo": "conjunto",
+  "esperado": "[1]"
+ },
+ {
+  "id": 205,
+  "nivel": 5,
+  "tema": "varias variables",
+  "entrada": "jacobiano [x*y, x^2-y^2]",
+  "modo": "matriz",
+  "esperado": "[[y, x], [2*x, -2*y]]"
+ },
+ {
+  "id": 206,
+  "nivel": 5,
+  "tema": "vectores",
+  "entrada": "proyeccion [3,4,0], [1,0,1]",
+  "modo": "vector",
+  "esperado": "[3/2, 0, 3/2]"
+ },
+ {
+  "id": 207,
+  "nivel": 5,
+  "tema": "algebra lineal",
+  "entrada": "autovalores [[1,1],[0,1]]",
+  "modo": "conjunto",
+  "esperado": "[1, 1]"
+ },
+ {
+  "id": 208,
+  "nivel": 5,
+  "tema": "edo",
+  "entrada": "edo y''+4y'+4y=0",
+  "modo": "edo_general",
+  "esperado": "(C1 + C2*x)*exp(-2*x)",
+  "edo": "Eq(4*y(x) + 4*Derivative(y(x), x) + Derivative(y(x), (x, 2)), 0)"
+ },
+ {
+  "id": 209,
+  "nivel": 5,
+  "tema": "laplace",
+  "entrada": "laplace inversa 1/(s*(s+1))",
+  "modo": "expr",
+  "esperado": "1 - exp(-t)"
+ },
+ {
+  "id": 210,
+  "nivel": 5,
+  "tema": "metodos numericos",
+  "entrada": "newton cos(x)-x, 1",
+  "modo": "numero",
+  "esperado": "0.739085133215161",
+  "tol": 1e-06
+ },
+ {
+  "id": 211,
+  "nivel": 5,
+  "tema": "complejos y circuitos",
+  "entrada": "polar -2-2i",
+  "modo": "vector",
+  "esperado": "[2*sqrt(2), -3*pi/4]"
+ },
+ {
+  "id": 212,
+  "nivel": 5,
+  "tema": "estadistica",
+  "entrada": "estadistica 10, 12, 23, 23, 16, 23, 21, 16",
+  "modo": "clave",
+  "esperado": "37/2",
+  "tol": 1e-09,
+  "clave": "mediana"
+ },
+ {
+  "id": 213,
+  "nivel": 5,
+  "tema": "graficos",
+  "entrada": "graficar polar 2sen(3t)",
+  "modo": "grafico",
+  "esperado": "polar"
+ },
+ {
+  "id": 214,
+  "nivel": 5,
+  "tema": "algebra",
+  "entrada": "fracciones parciales (x+3)/(x^2+x)",
+  "modo": "expr",
+  "esperado": "3/x - 2/(x + 1)"
+ },
+ {
+  "id": 215,
+  "nivel": 5,
+  "tema": "ecuaciones",
+  "entrada": "resolver abs(2x-1)<5",
+  "modo": "intervalo",
+  "esperado": "Interval.open(-2, 3)"
+ },
+ {
+  "id": 216,
+  "nivel": 5,
+  "tema": "limites",
+  "entrada": "limite x^5*e^(-x), x->oo",
+  "modo": "expr",
+  "esperado": "0"
+ },
+ {
+  "id": 217,
+  "nivel": 5,
+  "tema": "derivadas",
+  "entrada": "derivar e^x*cos(x), x, 2",
+  "modo": "expr",
+  "esperado": "-2*exp(x)*sin(x)"
+ },
+ {
+  "id": 218,
+  "nivel": 5,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar x^2*e^x",
+  "modo": "antiderivada",
+  "esperado": "(x**2 - 2*x + 2)*exp(x)"
+ },
+ {
+  "id": 219,
+  "nivel": 5,
+  "tema": "integrales definidas",
+  "entrada": "area x^2, 2x, 0, 2",
+  "modo": "expr",
+  "esperado": "4/3"
+ },
+ {
+  "id": 220,
+  "nivel": 5,
+  "tema": "taylor y sumatorias",
+  "entrada": "sumatoria (2/3)^k, k, 1, oo",
+  "modo": "expr",
+  "esperado": "2"
+ },
+ {
+  "id": 221,
+  "nivel": 5,
+  "tema": "extremos",
+  "entrada": "extremos x^2+y^2-4x+6y",
+  "modo": "conjunto",
+  "esperado": "[(2, -3)]"
+ },
+ {
+  "id": 222,
+  "nivel": 5,
+  "tema": "varias variables",
+  "entrada": "hessiano x^2*y+y^3",
+  "modo": "matriz",
+  "esperado": "[[2*y, 2*x], [2*x, 6*y]]"
+ },
+ {
+  "id": 223,
+  "nivel": 5,
+  "tema": "algebra lineal",
+  "entrada": "autovalores [[0,-1],[1,0]]",
+  "modo": "conjunto",
+  "esperado": "[I, -I]"
+ },
+ {
+  "id": 224,
+  "nivel": 5,
+  "tema": "edo",
+  "entrada": "edo y'+2y=e^(-x)",
+  "modo": "edo_general",
+  "esperado": "exp(-x) + C1*exp(-2*x)",
+  "edo": "Eq(2*y(x) + Derivative(y(x), x), exp(-x))"
+ },
+ {
+  "id": 225,
+  "nivel": 5,
+  "tema": "laplace",
+  "entrada": "laplace inversa 1/(s+2)^2",
+  "modo": "expr",
+  "esperado": "t*exp(-2*t)"
+ },
+ {
+  "id": 226,
+  "nivel": 5,
+  "tema": "metodos numericos",
+  "entrada": "biseccion x^3+x-1, 0, 1",
+  "modo": "numero",
+  "esperado": "0.682327803828019",
+  "tol": 1e-06
+ },
+ {
+  "id": 227,
+  "nivel": 5,
+  "tema": "complejos y circuitos",
+  "entrada": "fasor 20@60 - 10@0",
+  "modo": "numero",
+  "esperado": "10*sqrt(3)*I",
+  "tol": 1e-06
+ },
+ {
+  "id": 228,
+  "nivel": 5,
+  "tema": "estadistica",
+  "entrada": "binomial 20, 0.1, 0",
+  "modo": "numero",
+  "esperado": "(9/10)**20",
+  "tol": 1e-09
+ },
+ {
+  "id": 229,
+  "nivel": 5,
+  "tema": "graficos",
+  "entrada": "graficar polar t",
+  "modo": "grafico",
+  "esperado": "polar"
+ },
+ {
+  "id": 230,
+  "nivel": 5,
+  "tema": "algebra",
+  "entrada": "simplificar (1/x-1/y)/(1/x+1/y)",
+  "modo": "expr",
+  "esperado": "(y - x)/(x + y)"
+ },
+ {
+  "id": 231,
+  "nivel": 5,
+  "tema": "ecuaciones",
+  "entrada": "resolver (x-1)/(x+2)>=0",
+  "modo": "intervalo",
+  "esperado": "Union(Interval.open(-oo, -2), Interval(1, oo))"
+ },
+ {
+  "id": 232,
+  "nivel": 5,
+  "tema": "limites",
+  "entrada": "limite (1+3/x)^x, x->oo",
+  "modo": "expr",
+  "esperado": "exp(3)"
+ },
+ {
+  "id": 233,
+  "nivel": 5,
+  "tema": "derivadas",
+  "entrada": "derivar senh(2x)*cosh(x)",
+  "modo": "expr",
+  "esperado": "2*cosh(2*x)*cosh(x) + sinh(2*x)*sinh(x)"
+ },
+ {
+  "id": 234,
+  "nivel": 5,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar sen(x)^2",
+  "modo": "antiderivada",
+  "esperado": "x/2 - sin(2*x)/4"
+ },
+ {
+  "id": 235,
+  "nivel": 5,
+  "tema": "extremos",
+  "entrada": "extremos x^2-y^2",
+  "modo": "conjunto",
+  "esperado": "[(0, 0)]"
+ },
+ {
+  "id": 236,
+  "nivel": 5,
+  "tema": "varias variables",
+  "entrada": "integral triple x*y*z, x, 0, 1, y, 0, 1, z, 0, 1",
+  "modo": "expr",
+  "esperado": "1/8"
+ },
+ {
+  "id": 237,
+  "nivel": 5,
+  "tema": "algebra lineal",
+  "entrada": "autovalores [[4,-2],[1,1]]",
+  "modo": "conjunto",
+  "esperado": "[2, 3]"
+ },
+ {
+  "id": 238,
+  "nivel": 5,
+  "tema": "edo",
+  "entrada": "edo y'=-2t*y; y(0)=1",
+  "modo": "expr",
+  "esperado": "exp(-t**2)",
+  "edo": "Eq(Derivative(y(t), t), -2*t*y(t))"
+ },
+ {
+  "id": 239,
+  "nivel": 5,
+  "tema": "metodos numericos",
+  "entrada": "secante x^2-x-1, 1, 2",
+  "modo": "numero",
+  "esperado": "(1 + sqrt(5))/2",
+  "tol": 1e-06
+ },
+ {
+  "id": 240,
+  "nivel": 5,
+  "tema": "complejos y circuitos",
+  "entrada": "e^(i*pi/2)",
+  "modo": "expr",
+  "esperado": "I"
+ },
+ {
+  "id": 241,
+  "nivel": 5,
+  "tema": "estadistica",
+  "entrada": "poisson 3, 2",
+  "modo": "numero",
+  "esperado": "9*exp(-3)/2",
+  "tol": 1e-09
+ },
+ {
+  "id": 242,
+  "nivel": 5,
+  "tema": "graficos",
+  "entrada": "graficar parametrica t-sen(t), 1-cos(t)",
+  "modo": "grafico",
+  "esperado": "parametrica"
+ },
+ {
+  "id": 243,
+  "nivel": 5,
+  "tema": "algebra",
+  "entrada": "simplificar (e^(2x)-1)/(e^x+1)",
+  "modo": "expr",
+  "esperado": "exp(x) - 1"
+ },
+ {
+  "id": 244,
+  "nivel": 5,
+  "tema": "ecuaciones",
+  "entrada": "resolver 2^(x+1)=32",
+  "modo": "conjunto",
+  "esperado": "[4]"
+ },
+ {
+  "id": 245,
+  "nivel": 5,
+  "tema": "limites",
+  "entrada": "limite (2^x-1)/x, x->0",
+  "modo": "expr",
+  "esperado": "log(2)"
+ },
+ {
+  "id": 246,
+  "nivel": 5,
+  "tema": "derivadas",
+  "entrada": "derivar implicita y^2=x^3+x",
+  "modo": "expr",
+  "esperado": "(3*x**2 + 1)/(2*y)"
+ },
+ {
+  "id": 247,
+  "nivel": 5,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar 1/(x*ln(x))",
+  "modo": "antiderivada",
+  "esperado": "log(log(x))"
+ },
+ {
+  "id": 248,
+  "nivel": 5,
+  "tema": "varias variables",
+  "entrada": "integral doble e^(x+y), x, 0, 1, y, 0, 1",
+  "modo": "expr",
+  "esperado": "(E - 1)**2"
+ },
+ {
+  "id": 249,
+  "nivel": 5,
+  "tema": "algebra lineal",
+  "entrada": "rango [[1,0,1],[0,1,1],[1,1,2]]",
+  "modo": "expr",
+  "esperado": "2"
+ },
+ {
+  "id": 250,
+  "nivel": 5,
+  "tema": "edo",
+  "entrada": "edo (x+1)y'=y",
+  "modo": "edo_general",
+  "esperado": "C1*(x + 1)",
+  "edo": "Eq((x + 1)*Derivative(y(x), x), y(x))"
+ },
+ {
+  "id": 251,
+  "nivel": 6,
+  "tema": "metodos numericos",
+  "entrada": "trapecio x^2, 0, 2, 4",
+  "modo": "numero",
+  "esperado": "11/4",
+  "tol": 1e-09
+ },
+ {
+  "id": 252,
+  "nivel": 6,
+  "tema": "complejos y circuitos",
+  "entrada": "(2-i)^3",
+  "modo": "expr",
+  "esperado": "2 - 11*I"
+ },
+ {
+  "id": 253,
+  "nivel": 6,
+  "tema": "estadistica",
+  "entrada": "normal 0, 1, -1, 1",
+  "modo": "numero",
+  "esperado": "erf(sqrt(2)/2)",
+  "tol": 1e-06
+ },
+ {
+  "id": 254,
+  "nivel": 6,
+  "tema": "algebra",
+  "entrada": "evaluar ln(sqrt(e))+log(1/100)",
+  "modo": "expr",
+  "esperado": "-3/2"
+ },
+ {
+  "id": 255,
+  "nivel": 6,
+  "tema": "ecuaciones",
+  "entrada": "resolver x^2+2x+5=0",
+  "modo": "conjunto",
+  "esperado": "[-1 - 2*I, -1 + 2*I]"
+ },
+ {
+  "id": 256,
+  "nivel": 6,
+  "tema": "limites",
+  "entrada": "limite abs(x)/x, x->0-",
+  "modo": "expr",
+  "esperado": "-1"
+ },
+ {
+  "id": 257,
+  "nivel": 6,
+  "tema": "derivadas",
+  "entrada": "recta tangente sen(x), pi",
+  "modo": "expr",
+  "esperado": "pi - x"
+ },
+ {
+  "id": 258,
+  "nivel": 6,
+  "tema": "varias variables",
+  "entrada": "divergencia [x^2*y, -x*y^2, z]",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 259,
+  "nivel": 6,
+  "tema": "algebra lineal",
+  "entrada": "det [[x,1],[1,x]]",
+  "modo": "expr",
+  "esperado": "x**2 - 1"
+ },
+ {
+  "id": 260,
+  "nivel": 6,
+  "tema": "metodos numericos",
+  "entrada": "simpson x^3, 0, 2, 2",
+  "modo": "numero",
+  "esperado": "4",
+  "tol": 1e-09
+ },
+ {
+  "id": 261,
+  "nivel": 6,
+  "tema": "ecuaciones",
+  "entrada": "resolver 3x-2y+z=2; 2x+y-z=1; x+3y+2z=13",
+  "modo": "dict",
+  "esperado": "{x: 1, y: 2, z: 3}"
+ },
+ {
+  "id": 262,
+  "nivel": 6,
+  "tema": "limites",
+  "entrada": "limite (1-cos(2x))/(x*sen(x)), x->0",
+  "modo": "expr",
+  "esperado": "2"
+ },
+ {
+  "id": 263,
+  "nivel": 6,
+  "tema": "derivadas",
+  "entrada": "recta tangente e^x*sen(x), 0",
+  "modo": "expr",
+  "esperado": "x"
+ },
+ {
+  "id": 264,
+  "nivel": 6,
+  "tema": "varias variables",
+  "entrada": "rotacional [y*z, x*z, x*y]",
+  "modo": "vector",
+  "esperado": "[0, 0, 0]"
+ },
+ {
+  "id": 265,
+  "nivel": 6,
+  "tema": "algebra lineal",
+  "entrada": "[[1,2],[3,4]]^2-5*[[1,2],[3,4]]",
+  "modo": "matriz",
+  "esperado": "[[2, 0], [0, 2]]"
+ },
+ {
+  "id": 266,
+  "nivel": 6,
+  "tema": "metodos numericos",
+  "entrada": "interpolar (1,2), (2,3), (3,6)",
+  "modo": "expr",
+  "esperado": "x**2 - 2*x + 3"
+ },
+ {
+  "id": 267,
+  "nivel": 6,
+  "tema": "ecuaciones",
+  "entrada": "resolver x^2-2x-8<=0",
+  "modo": "intervalo",
+  "esperado": "Interval(-2, 4)"
+ },
+ {
+  "id": 268,
+  "nivel": 6,
+  "tema": "derivadas",
+  "entrada": "derivar x^2*e^(y*z), z",
+  "modo": "expr",
+  "esperado": "x**2*y*exp(y*z)"
+ },
+ {
+  "id": 269,
+  "nivel": 6,
+  "tema": "varias variables",
+  "entrada": "gradiente ln(x^2+y^2+z^2)",
+  "modo": "vector",
+  "esperado": "[2*x/(x**2 + y**2 + z**2), 2*y/(x**2 + y**2 + z**2), 2*z/(x**2 + y**2 + z**2)]"
+ },
+ {
+  "id": 270,
+  "nivel": 6,
+  "tema": "algebra lineal",
+  "entrada": "inversa [[1,1,1],[0,1,1],[0,0,1]]",
+  "modo": "matriz",
+  "esperado": "[[1, -1, 0], [0, 1, -1], [0, 0, 1]]"
+ },
+ {
+  "id": 271,
+  "nivel": 6,
+  "tema": "metodos numericos",
+  "entrada": "regresion (0,1), (1,3), (2,5), (3,7)",
+  "modo": "expr",
+  "esperado": "2*x + 1"
+ },
+ {
+  "id": 272,
+  "nivel": 6,
+  "tema": "ecuaciones",
+  "entrada": "resolver cbrt(x+7)=2",
+  "modo": "conjunto",
+  "esperado": "[1]"
+ },
+ {
+  "id": 273,
+  "nivel": 6,
+  "tema": "varias variables",
+  "entrada": "derivar x^3*y^2*z, x, 2",
+  "modo": "expr",
+  "esperado": "6*x*y**2*z"
+ },
+ {
+  "id": 274,
+  "nivel": 6,
+  "tema": "algebra lineal",
+  "entrada": "inversa [[4,7],[2,6]]",
+  "modo": "matriz",
+  "esperado": "[[3/5, -7/10], [-1/5, 2/5]]"
+ },
+ {
+  "id": 275,
+  "nivel": 6,
+  "tema": "algebra",
+  "entrada": "factorizar x^4-5x^2+4",
+  "modo": "expr",
+  "esperado": "(x - 2)*(x - 1)*(x + 1)*(x + 2)"
+ },
+ {
+  "id": 276,
+  "nivel": 6,
+  "tema": "ecuaciones",
+  "entrada": "resolver ln(x)+ln(x-1)=ln(6)",
+  "modo": "conjunto",
+  "esperado": "[3]"
+ },
+ {
+  "id": 277,
+  "nivel": 6,
+  "tema": "limites",
+  "entrada": "limite (x-sen(x))/x^3, x->0",
+  "modo": "expr",
+  "esperado": "1/6"
+ },
+ {
+  "id": 278,
+  "nivel": 6,
+  "tema": "derivadas",
+  "entrada": "derivar x^x",
+  "modo": "expr",
+  "esperado": "x**x*(log(x) + 1)"
+ },
+ {
+  "id": 279,
+  "nivel": 6,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar e^x*sen(x)",
+  "modo": "antiderivada",
+  "esperado": "exp(x)*(sin(x) - cos(x))/2"
+ },
+ {
+  "id": 280,
+  "nivel": 6,
+  "tema": "integrales definidas",
+  "entrada": "area sen(x), cos(x), 0, pi/2",
+  "modo": "expr",
+  "esperado": "2*sqrt(2) - 2"
+ },
+ {
+  "id": 281,
+  "nivel": 6,
+  "tema": "taylor y sumatorias",
+  "entrada": "taylor arctg(x), x, 0, 5",
+  "modo": "expr",
+  "esperado": "x - x**3/3 + x**5/5"
+ },
+ {
+  "id": 282,
+  "nivel": 6,
+  "tema": "extremos",
+  "entrada": "extremos ln(x)/x",
+  "modo": "conjunto",
+  "esperado": "[E]"
+ },
+ {
+  "id": 283,
+  "nivel": 6,
+  "tema": "varias variables",
+  "entrada": "integral doble x*y, y, 0, x, x, 0, 1",
+  "modo": "expr",
+  "esperado": "1/8"
+ },
+ {
+  "id": 284,
+  "nivel": 6,
+  "tema": "vectores",
+  "entrada": "angulo [3,0], [-1,sqrt(3)]",
+  "modo": "expr",
+  "esperado": "2*pi/3"
+ },
+ {
+  "id": 285,
+  "nivel": 6,
+  "tema": "algebra lineal",
+  "entrada": "inversa [[1,0,2],[2,-1,3],[4,1,8]]",
+  "modo": "matriz",
+  "esperado": "[[-11, 2, 2], [-4, 0, 1], [6, -1, -1]]"
+ },
+ {
+  "id": 286,
+  "nivel": 6,
+  "tema": "edo",
+  "entrada": "edo y''+2y'+5y=0",
+  "modo": "edo_general",
+  "esperado": "exp(-x)*(C1*cos(2*x) + C2*sin(2*x))",
+  "edo": "Eq(5*y(x) + 2*Derivative(y(x), x) + Derivative(y(x), (x, 2)), 0)"
+ },
+ {
+  "id": 287,
+  "nivel": 6,
+  "tema": "laplace",
+  "entrada": "laplace t*sen(t)",
+  "modo": "expr",
+  "esperado": "2*s/(s**2 + 1)**2"
+ },
+ {
+  "id": 288,
+  "nivel": 6,
+  "tema": "metodos numericos",
+  "entrada": "newton e^x-3x, 0",
+  "modo": "numero",
+  "esperado": "0.619061286735945",
+  "tol": 1e-06
+ },
+ {
+  "id": 289,
+  "nivel": 6,
+  "tema": "complejos y circuitos",
+  "entrada": "fasor 5@53.13 + 3@-90",
+  "modo": "numero",
+  "esperado": "3.00000714566331 + 0.999994640742543*I",
+  "tol": 1e-06
+ },
+ {
+  "id": 290,
+  "nivel": 6,
+  "tema": "estadistica",
+  "entrada": "estadistica 4, 8, 6, 5, 3, 7",
+  "modo": "clave",
+  "esperado": "sqrt(7/2)",
+  "tol": 1e-09,
+  "clave": "desvio"
+ },
+ {
+  "id": 291,
+  "nivel": 6,
+  "tema": "graficos",
+  "entrada": "graficar 3d sen(x)*cos(y)",
+  "modo": "grafico",
+  "esperado": "3d"
+ },
+ {
+  "id": 292,
+  "nivel": 6,
+  "tema": "algebra",
+  "entrada": "fracciones parciales (2x^2+3)/(x^3+x)",
+  "modo": "expr",
+  "esperado": "3/x - x/(x**2 + 1)"
+ },
+ {
+  "id": 293,
+  "nivel": 6,
+  "tema": "ecuaciones",
+  "entrada": "resolver x^3-3x+2=0",
+  "modo": "conjunto",
+  "esperado": "[-2, 1]"
+ },
+ {
+  "id": 294,
+  "nivel": 6,
+  "tema": "limites",
+  "entrada": "limite x^x, x->0+",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 295,
+  "nivel": 6,
+  "tema": "derivadas",
+  "entrada": "derivar implicita x^3+y^3=6x*y",
+  "modo": "expr",
+  "esperado": "(2*y - x**2)/(y**2 - 2*x)"
+ },
+ {
+  "id": 296,
+  "nivel": 6,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar 1/(x^2+4x+5)",
+  "modo": "antiderivada",
+  "esperado": "atan(x + 2)"
+ },
+ {
+  "id": 297,
+  "nivel": 6,
+  "tema": "integrales definidas",
+  "entrada": "integrar sqrt(1-x^2), x, -1, 1",
+  "modo": "expr",
+  "esperado": "pi/2"
+ },
+ {
+  "id": 298,
+  "nivel": 6,
+  "tema": "taylor y sumatorias",
+  "entrada": "taylor cos(x), x, pi, 2",
+  "modo": "expr",
+  "esperado": "-1 + (x - pi)**2/2"
+ },
+ {
+  "id": 299,
+  "nivel": 6,
+  "tema": "extremos",
+  "entrada": "extremos x*y-x^2-y^2+3y",
+  "modo": "conjunto",
+  "esperado": "[(1, 2)]"
+ },
+ {
+  "id": 300,
+  "nivel": 6,
+  "tema": "varias variables",
+  "entrada": "integral doble 1, y, x^2, x, x, 0, 1",
+  "modo": "expr",
+  "esperado": "1/6"
+ },
+ {
+  "id": 301,
+  "nivel": 7,
+  "tema": "vectores",
+  "entrada": "proyeccion [1,1,1], [2,-1,2]",
+  "modo": "vector",
+  "esperado": "[2/3, -1/3, 2/3]"
+ },
+ {
+  "id": 302,
+  "nivel": 7,
+  "tema": "algebra lineal",
+  "entrada": "autovalores [[1,2,0],[2,1,0],[0,0,3]]",
+  "modo": "conjunto",
+  "esperado": "[-1, 3, 3]"
+ },
+ {
+  "id": 303,
+  "nivel": 7,
+  "tema": "edo",
+  "entrada": "edo y'+y/x=x^2",
+  "modo": "edo_general",
+  "esperado": "x**3/4 + C1/x",
+  "edo": "Eq(Derivative(y(x), x) + y(x)/x, x**2)"
+ },
+ {
+  "id": 304,
+  "nivel": 7,
+  "tema": "laplace",
+  "entrada": "laplace u(t-2)",
+  "modo": "expr",
+  "esperado": "exp(-2*s)/s"
+ },
+ {
+  "id": 305,
+  "nivel": 7,
+  "tema": "metodos numericos",
+  "entrada": "biseccion e^x+x-2, 0, 1",
+  "modo": "numero",
+  "esperado": "0.442854401002389",
+  "tol": 1e-06
+ },
+ {
+  "id": 306,
+  "nivel": 7,
+  "tema": "estadistica",
+  "entrada": "estadistica 1.5, 2.5, 3.5, 4.5",
+  "modo": "clave",
+  "esperado": "5/4",
+  "tol": 1e-09,
+  "clave": "varianza_pob"
+ },
+ {
+  "id": 307,
+  "nivel": 7,
+  "tema": "graficos",
+  "entrada": "graficar 3d e^(-x^2-y^2)",
+  "modo": "grafico",
+  "esperado": "3d"
+ },
+ {
+  "id": 308,
+  "nivel": 7,
+  "tema": "algebra",
+  "entrada": "fracciones parciales (x^2+1)/((x-1)^2*(x+2))",
+  "modo": "expr",
+  "esperado": "4/(9*(x - 1)) + 2/(3*(x - 1)**2) + 5/(9*(x + 2))"
+ },
+ {
+  "id": 309,
+  "nivel": 7,
+  "tema": "ecuaciones",
+  "entrada": "resolver e^(2x)-3e^x+2=0",
+  "modo": "conjunto",
+  "esperado": "[0, log(2)]"
+ },
+ {
+  "id": 310,
+  "nivel": 7,
+  "tema": "limites",
+  "entrada": "limite sqrt(x^2+3x)-x, x->oo",
+  "modo": "expr",
+  "esperado": "3/2"
+ },
+ {
+  "id": 311,
+  "nivel": 7,
+  "tema": "derivadas",
+  "entrada": "derivar sqrt(1+sen(x)^2)",
+  "modo": "expr",
+  "esperado": "sin(x)*cos(x)/sqrt(1 + sin(x)**2)"
+ },
+ {
+  "id": 312,
+  "nivel": 7,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar (3x+5)/(x^2+3x+2)",
+  "modo": "antiderivada",
+  "esperado": "2*log(x + 1) + log(x + 2)"
+ },
+ {
+  "id": 313,
+  "nivel": 7,
+  "tema": "integrales definidas",
+  "entrada": "integrar 1/sqrt(x), x, 0, 4",
+  "modo": "expr",
+  "esperado": "4"
+ },
+ {
+  "id": 314,
+  "nivel": 7,
+  "tema": "taylor y sumatorias",
+  "entrada": "sumatoria 1/(k*(k+1)), k, 1, oo",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 315,
+  "nivel": 7,
+  "tema": "extremos",
+  "entrada": "lagrange x*y; 2x+y=20",
+  "modo": "conjunto",
+  "esperado": "[(5, 10)]"
+ },
+ {
+  "id": 316,
+  "nivel": 7,
+  "tema": "varias variables",
+  "entrada": "rotacional [x^2*y, y*z, x*z^2]",
+  "modo": "vector",
+  "esperado": "[-y, -z**2, -x**2]"
+ },
+ {
+  "id": 317,
+  "nivel": 7,
+  "tema": "algebra lineal",
+  "entrada": "gauss [[1,1,1,6],[2,-1,1,3],[1,2,-1,2]]",
+  "modo": "matriz",
+  "esperado": "[[1, 0, 0, 1], [0, 1, 0, 2], [0, 0, 1, 3]]"
+ },
+ {
+  "id": 318,
+  "nivel": 7,
+  "tema": "edo",
+  "entrada": "edo y''-y=x",
+  "modo": "edo_general",
+  "esperado": "C1*exp(x) + C2*exp(-x) - x",
+  "edo": "Eq(-y(x) + Derivative(y(x), (x, 2)), x)"
+ },
+ {
+  "id": 319,
+  "nivel": 7,
+  "tema": "laplace",
+  "entrada": "laplace delta(t-3)",
+  "modo": "expr",
+  "esperado": "exp(-3*s)"
+ },
+ {
+  "id": 320,
+  "nivel": 7,
+  "tema": "metodos numericos",
+  "entrada": "punto fijo e^(-x), 0.5",
+  "modo": "numero",
+  "esperado": "LambertW(1)",
+  "tol": 1e-06
+ },
+ {
+  "id": 321,
+  "nivel": 7,
+  "tema": "estadistica",
+  "entrada": "binomial 10, 0.3, 4",
+  "modo": "numero",
+  "esperado": "binomial(10, 4)*(3/10)**4*(7/10)**6",
+  "tol": 1e-09
+ },
+ {
+  "id": 322,
+  "nivel": 7,
+  "tema": "algebra",
+  "entrada": "simplificar sen(2x)/(2cos(x))",
+  "modo": "expr",
+  "esperado": "sin(x)"
+ },
+ {
+  "id": 323,
+  "nivel": 7,
+  "tema": "ecuaciones",
+  "entrada": "resolver x^3-x>0",
+  "modo": "intervalo",
+  "esperado": "Union(Interval.open(-1, 0), Interval.open(1, oo))"
+ },
+ {
+  "id": 324,
+  "nivel": 7,
+  "tema": "limites",
+  "entrada": "limite (e^x-1-x)/x^2, x->0",
+  "modo": "expr",
+  "esperado": "1/2"
+ },
+ {
+  "id": 325,
+  "nivel": 7,
+  "tema": "derivadas",
+  "entrada": "derivar ln((1+x)/(1-x))",
+  "modo": "expr",
+  "esperado": "2/(1 - x**2)"
+ },
+ {
+  "id": 326,
+  "nivel": 7,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar arctg(x)",
+  "modo": "antiderivada",
+  "esperado": "x*atan(x) - log(x**2 + 1)/2"
+ },
+ {
+  "id": 327,
+  "nivel": 7,
+  "tema": "integrales definidas",
+  "entrada": "area x^3, x, -1, 1",
+  "modo": "expr",
+  "esperado": "1/2"
+ },
+ {
+  "id": 328,
+  "nivel": 7,
+  "tema": "taylor y sumatorias",
+  "entrada": "sumatoria k^3, k, 1, n",
+  "modo": "expr",
+  "esperado": "n**2*(n + 1)**2/4"
+ },
+ {
+  "id": 329,
+  "nivel": 7,
+  "tema": "varias variables",
+  "entrada": "laplaciano x^2*y*z^3",
+  "modo": "expr",
+  "esperado": "2*y*z**3 + 6*x**2*y*z"
+ },
+ {
+  "id": 330,
+  "nivel": 7,
+  "tema": "algebra lineal",
+  "entrada": "autovalores [[3,1],[-1,1]]",
+  "modo": "conjunto",
+  "esperado": "[2, 2]"
+ },
+ {
+  "id": 331,
+  "nivel": 7,
+  "tema": "edo",
+  "entrada": "edo y'=y^2",
+  "modo": "edo_general",
+  "esperado": "-1/(x + C1)",
+  "edo": "Eq(Derivative(y(x), x), y(x)**2)"
+ },
+ {
+  "id": 332,
+  "nivel": 7,
+  "tema": "laplace",
+  "entrada": "laplace inversa (s+1)/(s^2+2s+5)",
+  "modo": "expr",
+  "esperado": "exp(-t)*cos(2*t)"
+ },
+ {
+  "id": 333,
+  "nivel": 7,
+  "tema": "metodos numericos",
+  "entrada": "punto fijo (x+3/x)/2, 1",
+  "modo": "numero",
+  "esperado": "sqrt(3)",
+  "tol": 1e-06
+ },
+ {
+  "id": 334,
+  "nivel": 7,
+  "tema": "estadistica",
+  "entrada": "poisson 2.5, 4",
+  "modo": "numero",
+  "esperado": "exp(-5/2)*(5/2)**4/24",
+  "tol": 1e-09
+ },
+ {
+  "id": 335,
+  "nivel": 7,
+  "tema": "algebra",
+  "entrada": "factorizar 6x^2-x*y-2y^2",
+  "modo": "expr",
+  "esperado": "(2*x + y)*(3*x - 2*y)"
+ },
+ {
+  "id": 336,
+  "nivel": 7,
+  "tema": "ecuaciones",
+  "entrada": "resolver abs(x-3)>=2",
+  "modo": "intervalo",
+  "esperado": "Union(Interval(-oo, 1), Interval(5, oo))"
+ },
+ {
+  "id": 337,
+  "nivel": 7,
+  "tema": "limites",
+  "entrada": "limite x*sen(1/x), x->oo",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 338,
+  "nivel": 7,
+  "tema": "derivadas",
+  "entrada": "derivar x^2*e^(-x), x, 3",
+  "modo": "expr",
+  "esperado": "-(x**2 - 6*x + 6)*exp(-x)"
+ },
+ {
+  "id": 339,
+  "nivel": 7,
+  "tema": "integrales definidas",
+  "entrada": "area sen(x), 0, 0, 2pi",
+  "modo": "expr",
+  "esperado": "4"
+ },
+ {
+  "id": 340,
+  "nivel": 7,
+  "tema": "taylor y sumatorias",
+  "entrada": "taylor 1/x, x, 2, 3",
+  "modo": "expr",
+  "esperado": "1/2 - (x - 2)/4 + (x - 2)**2/8 - (x - 2)**3/16"
+ },
+ {
+  "id": 341,
+  "nivel": 7,
+  "tema": "varias variables",
+  "entrada": "jacobiano [x*cos(y), x*sen(y)]",
+  "modo": "matriz",
+  "esperado": "[[cos(y), -x*sin(y)], [sin(y), x*cos(y)]]"
+ },
+ {
+  "id": 342,
+  "nivel": 7,
+  "tema": "algebra lineal",
+  "entrada": "autovalores [[1,-1],[1,1]]",
+  "modo": "conjunto",
+  "esperado": "[1 - I, 1 + I]"
+ },
+ {
+  "id": 343,
+  "nivel": 7,
+  "tema": "edo",
+  "entrada": "edo y''+4y=0; y(0)=1; y'(0)=2",
+  "modo": "expr",
+  "esperado": "cos(2*x) + sin(2*x)",
+  "edo": "Eq(4*y(x) + Derivative(y(x), (x, 2)), 0)"
+ },
+ {
+  "id": 344,
+  "nivel": 7,
+  "tema": "laplace",
+  "entrada": "laplace inversa 3/(s^2+2s+10)",
+  "modo": "expr",
+  "esperado": "exp(-t)*sin(3*t)"
+ },
+ {
+  "id": 345,
+  "nivel": 7,
+  "tema": "metodos numericos",
+  "entrada": "punto fijo 1+1/x, 1",
+  "modo": "numero",
+  "esperado": "(1 + sqrt(5))/2",
+  "tol": 1e-06
+ },
+ {
+  "id": 346,
+  "nivel": 7,
+  "tema": "estadistica",
+  "entrada": "normal 50, 10, 60, oo",
+  "modo": "numero",
+  "esperado": "0.158655253931457",
+  "tol": 1e-06
+ },
+ {
+  "id": 347,
+  "nivel": 7,
+  "tema": "algebra",
+  "entrada": "expandir (x^2+x+1)(x^2-x+1)",
+  "modo": "expr",
+  "esperado": "x**4 + x**2 + 1"
+ },
+ {
+  "id": 348,
+  "nivel": 7,
+  "tema": "ecuaciones",
+  "entrada": "resolver 0.5x+1.5y=4; 2x-y=2",
+  "modo": "dict",
+  "esperado": "{x: 2, y: 2}"
+ },
+ {
+  "id": 349,
+  "nivel": 7,
+  "tema": "derivadas",
+  "entrada": "derivar implicita e^y+x*y=e",
+  "modo": "expr",
+  "esperado": "-y/(x + exp(y))"
+ },
+ {
+  "id": 350,
+  "nivel": 7,
+  "tema": "varias variables",
+  "entrada": "jacobiano [x+y+z, x*y, y*z]",
+  "modo": "matriz",
+  "esperado": "[[1, 1, 1], [y, x, 0], [0, z, y]]"
+ },
+ {
+  "id": 351,
+  "nivel": 8,
+  "tema": "algebra lineal",
+  "entrada": "gauss [[2,1,-1,8],[-3,-1,2,-11],[-2,1,2,-3]]",
+  "modo": "matriz",
+  "esperado": "[[1, 0, 0, 2], [0, 1, 0, 3], [0, 0, 1, -1]]"
+ },
+ {
+  "id": 352,
+  "nivel": 8,
+  "tema": "edo",
+  "entrada": "edo y'+y=x; y(0)=0",
+  "modo": "expr",
+  "esperado": "x - 1 + exp(-x)",
+  "edo": "Eq(y(x) + Derivative(y(x), x), x)"
+ },
+ {
+  "id": 353,
+  "nivel": 8,
+  "tema": "laplace",
+  "entrada": "laplace inversa (2s+3)/(s^2+3s+2)",
+  "modo": "expr",
+  "esperado": "exp(-t) + exp(-2*t)"
+ },
+ {
+  "id": 354,
+  "nivel": 8,
+  "tema": "metodos numericos",
+  "entrada": "euler y'=y, 0, 1, 0.25, 1",
+  "modo": "numero",
+  "esperado": "625/256",
+  "tol": 1e-09
+ },
+ {
+  "id": 355,
+  "nivel": 8,
+  "tema": "ecuaciones",
+  "entrada": "resolver log(x, 2)+log(x-2, 2)=3",
+  "modo": "conjunto",
+  "esperado": "[4]"
+ },
+ {
+  "id": 356,
+  "nivel": 8,
+  "tema": "derivadas",
+  "entrada": "derivar ln(sec(x)+tg(x))",
+  "modo": "expr",
+  "esperado": "1/cos(x)"
+ },
+ {
+  "id": 357,
+  "nivel": 8,
+  "tema": "varias variables",
+  "entrada": "hessiano x^2*y^2+x*y",
+  "modo": "matriz",
+  "esperado": "[[2*y**2, 4*x*y + 1], [4*x*y + 1, 2*x**2]]"
+ },
+ {
+  "id": 358,
+  "nivel": 8,
+  "tema": "laplace",
+  "entrada": "laplace inversa 2/(s-1)^3",
+  "modo": "expr",
+  "esperado": "t**2*exp(t)"
+ },
+ {
+  "id": 359,
+  "nivel": 8,
+  "tema": "metodos numericos",
+  "entrada": "interpolar (0,0), (1,1), (2,8), (3,27)",
+  "modo": "expr",
+  "esperado": "x**3"
+ },
+ {
+  "id": 360,
+  "nivel": 8,
+  "tema": "derivadas",
+  "entrada": "derivar x^3*ln(x), x, 2",
+  "modo": "expr",
+  "esperado": "6*x*log(x) + 5*x"
+ },
+ {
+  "id": 361,
+  "nivel": 8,
+  "tema": "varias variables",
+  "entrada": "integral triple x+y+z, x, 0, 1, y, 0, 2, z, 0, 3",
+  "modo": "expr",
+  "esperado": "18"
+ },
+ {
+  "id": 362,
+  "nivel": 8,
+  "tema": "metodos numericos",
+  "entrada": "interpolar (-1,4), (0,1), (2,1)",
+  "modo": "expr",
+  "esperado": "x**2 - 2*x + 1"
+ },
+ {
+  "id": 363,
+  "nivel": 8,
+  "tema": "derivadas",
+  "entrada": "derivar tgh(x^2)",
+  "modo": "expr",
+  "esperado": "2*x*(1 - tanh(x**2)**2)"
+ },
+ {
+  "id": 364,
+  "nivel": 8,
+  "tema": "metodos numericos",
+  "entrada": "regresion (1,1), (2,2), (3,2), (4,3)",
+  "modo": "expr",
+  "esperado": "3*x/5 + 1/2"
+ },
+ {
+  "id": 365,
+  "nivel": 8,
+  "tema": "algebra",
+  "entrada": "fracciones parciales (s+3)/(s^3+3s^2+2s)",
+  "modo": "expr",
+  "esperado": "3/(2*s) - 2/(s + 1) + 1/(2*(s + 2))"
+ },
+ {
+  "id": 366,
+  "nivel": 8,
+  "tema": "ecuaciones",
+  "entrada": "resolver (x^2-1)/(x-3)<0",
+  "modo": "intervalo",
+  "esperado": "Union(Interval.open(-oo, -1), Interval.open(1, 3))"
+ },
+ {
+  "id": 367,
+  "nivel": 8,
+  "tema": "limites",
+  "entrada": "limite (1+sen(x))^(1/x), x->0",
+  "modo": "expr",
+  "esperado": "E"
+ },
+ {
+  "id": 368,
+  "nivel": 8,
+  "tema": "derivadas",
+  "entrada": "derivar arctg((1+x)/(1-x))",
+  "modo": "expr",
+  "esperado": "1/(x**2 + 1)"
+ },
+ {
+  "id": 369,
+  "nivel": 8,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar sen(x)^3*cos(x)^2",
+  "modo": "antiderivada",
+  "esperado": "-cos(x)**3/3 + cos(x)**5/5"
+ },
+ {
+  "id": 370,
+  "nivel": 8,
+  "tema": "integrales definidas",
+  "entrada": "integrar x^2*e^(-x), x, 0, oo",
+  "modo": "expr",
+  "esperado": "2"
+ },
+ {
+  "id": 371,
+  "nivel": 8,
+  "tema": "taylor y sumatorias",
+  "entrada": "taylor e^x*sen(x), x, 0, 4",
+  "modo": "expr",
+  "esperado": "x + x**2 + x**3/3"
+ },
+ {
+  "id": 372,
+  "nivel": 8,
+  "tema": "extremos",
+  "entrada": "extremos x^3+y^3-3x*y",
+  "modo": "conjunto",
+  "esperado": "[(0, 0), (1, 1)]"
+ },
+ {
+  "id": 373,
+  "nivel": 8,
+  "tema": "varias variables",
+  "entrada": "integral triple 1, z, 0, 1-x-y, y, 0, 1-x, x, 0, 1",
+  "modo": "expr",
+  "esperado": "1/6"
+ },
+ {
+  "id": 374,
+  "nivel": 8,
+  "tema": "vectores",
+  "entrada": "angulo [1,2,3], [3,2,1]",
+  "modo": "expr",
+  "esperado": "acos(5/7)"
+ },
+ {
+  "id": 375,
+  "nivel": 8,
+  "tema": "algebra lineal",
+  "entrada": "autovalores [[2,1,1],[1,2,1],[1,1,2]]",
+  "modo": "conjunto",
+  "esperado": "[1, 1, 4]"
+ },
+ {
+  "id": 376,
+  "nivel": 8,
+  "tema": "edo",
+  "entrada": "edo y''-3y'+2y=e^(3x)",
+  "modo": "edo_general",
+  "esperado": "C1*exp(x) + C2*exp(2*x) + exp(3*x)/2",
+  "edo": "Eq(2*y(x) - 3*Derivative(y(x), x) + Derivative(y(x), (x, 2)), exp(3*x))"
+ },
+ {
+  "id": 377,
+  "nivel": 8,
+  "tema": "laplace",
+  "entrada": "laplace (t-1)*u(t-1)",
+  "modo": "expr",
+  "esperado": "exp(-s)/s**2"
+ },
+ {
+  "id": 378,
+  "nivel": 8,
+  "tema": "fourier",
+  "entrada": "fourier x, x, -pi, pi, 2",
+  "modo": "expr",
+  "esperado": "2*sin(x) - sin(2*x)"
+ },
+ {
+  "id": 379,
+  "nivel": 8,
+  "tema": "metodos numericos",
+  "entrada": "newton x*e^x-1, 0.5",
+  "modo": "numero",
+  "esperado": "LambertW(1)",
+  "tol": 1e-06
+ },
+ {
+  "id": 380,
+  "nivel": 8,
+  "tema": "complejos y circuitos",
+  "entrada": "fasor 100@0 + 100@120 + 100@-120",
+  "modo": "expr",
+  "esperado": "0"
+ },
+ {
+  "id": 381,
+  "nivel": 8,
+  "tema": "estadistica",
+  "entrada": "normal 100, 15, 85, 130",
+  "modo": "numero",
+  "esperado": "0.818594614120",
+  "tol": 1e-06
+ },
+ {
+  "id": 382,
+  "nivel": 8,
+  "tema": "algebra",
+  "entrada": "simplificar (x^3-27)/(x^2-9)-(x^2+3x+9)/(x+3)",
+  "modo": "expr",
+  "esperado": "0"
+ },
+ {
+  "id": 383,
+  "nivel": 8,
+  "tema": "ecuaciones",
+  "entrada": "resolver x+y+z+t=10; x-y=-1; y-z=-1; z-t=-1",
+  "modo": "dict",
+  "esperado": "{x: 1, y: 2, z: 3, t: 4}"
+ },
+ {
+  "id": 384,
+  "nivel": 8,
+  "tema": "limites",
+  "entrada": "limite (tg(x)-sen(x))/x^3, x->0",
+  "modo": "expr",
+  "esperado": "1/2"
+ },
+ {
+  "id": 385,
+  "nivel": 8,
+  "tema": "derivadas",
+  "entrada": "derivar x*sen(x), x, 4",
+  "modo": "expr",
+  "esperado": "x*sin(x) - 4*cos(x)"
+ },
+ {
+  "id": 386,
+  "nivel": 8,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar sqrt(4-x^2)",
+  "modo": "antiderivada",
+  "esperado": "x*sqrt(4 - x**2)/2 + 2*asin(x/2)"
+ },
+ {
+  "id": 387,
+  "nivel": 8,
+  "tema": "integrales definidas",
+  "entrada": "integrar 1/(x^2+4), x, -oo, oo",
+  "modo": "expr",
+  "esperado": "pi/2"
+ },
+ {
+  "id": 388,
+  "nivel": 8,
+  "tema": "taylor y sumatorias",
+  "entrada": "taylor tg(x), x, 0, 5",
+  "modo": "expr",
+  "esperado": "x + x**3/3 + 2*x**5/15"
+ },
+ {
+  "id": 389,
+  "nivel": 8,
+  "tema": "extremos",
+  "entrada": "lagrange x+y; x^2+y^2=8",
+  "modo": "conjunto",
+  "esperado": "[(2, 2), (-2, -2)]"
+ },
+ {
+  "id": 390,
+  "nivel": 8,
+  "tema": "varias variables",
+  "entrada": "hessiano e^(x*y)",
+  "modo": "matriz",
+  "esperado": "[[y**2*exp(x*y), (x*y + 1)*exp(x*y)], [(x*y + 1)*exp(x*y), x**2*exp(x*y)]]"
+ },
+ {
+  "id": 391,
+  "nivel": 8,
+  "tema": "algebra lineal",
+  "entrada": "gauss [[1,2,1,4],[2,4,3,9],[1,2,2,5]]",
+  "modo": "matriz",
+  "esperado": "[[1, 2, 0, 3], [0, 0, 1, 1], [0, 0, 0, 0]]"
+ },
+ {
+  "id": 392,
+  "nivel": 8,
+  "tema": "edo",
+  "entrada": "edo y'''-y'=0",
+  "modo": "edo_general",
+  "esperado": "C1 + C2*exp(x) + C3*exp(-x)",
+  "edo": "Eq(-Derivative(y(x), x) + Derivative(y(x), (x, 3)), 0)"
+ },
+ {
+  "id": 393,
+  "nivel": 8,
+  "tema": "laplace",
+  "entrada": "laplace inversa 1/(s^2*(s^2+1))",
+  "modo": "expr",
+  "esperado": "t - sin(t)"
+ },
+ {
+  "id": 394,
+  "nivel": 8,
+  "tema": "metodos numericos",
+  "entrada": "biseccion tg(x)-x, 4, 4.6",
+  "modo": "numero",
+  "esperado": "4.49340945790906",
+  "tol": 1e-06
+ },
+ {
+  "id": 395,
+  "nivel": 8,
+  "tema": "complejos y circuitos",
+  "entrada": "(10+5i)*(4-3i)/((10+5i)+(4-3i))",
+  "modo": "expr",
+  "esperado": "15/4 - 5*I/4"
+ },
+ {
+  "id": 396,
+  "nivel": 8,
+  "tema": "estadistica",
+  "entrada": "normal 0, 1, -oo, 1.645",
+  "modo": "numero",
+  "esperado": "0.950015094",
+  "tol": 1e-06
+ },
+ {
+  "id": 397,
+  "nivel": 8,
+  "tema": "algebra",
+  "entrada": "factorizar x^5-x",
+  "modo": "expr",
+  "esperado": "x*(x - 1)*(x + 1)*(x**2 + 1)"
+ },
+ {
+  "id": 398,
+  "nivel": 8,
+  "tema": "ecuaciones",
+  "entrada": "resolver x^4+x^2-12=0",
+  "modo": "conjunto",
+  "esperado": "[-sqrt(3), sqrt(3), -2*I, 2*I]"
+ },
+ {
+  "id": 399,
+  "nivel": 8,
+  "tema": "limites",
+  "entrada": "limite (x/(x+1))^x, x->oo",
+  "modo": "expr",
+  "esperado": "exp(-1)"
+ },
+ {
+  "id": 400,
+  "nivel": 8,
+  "tema": "derivadas",
+  "entrada": "derivar implicita sen(x+y)=y",
+  "modo": "expr",
+  "esperado": "cos(x + y)/(1 - cos(x + y))"
+ },
+ {
+  "id": 401,
+  "nivel": 9,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar x^3*e^(x^2)",
+  "modo": "antiderivada",
+  "esperado": "(x**2 - 1)*exp(x**2)/2"
+ },
+ {
+  "id": 402,
+  "nivel": 9,
+  "tema": "integrales definidas",
+  "entrada": "area e^x, x+1, 0, 1",
+  "modo": "expr",
+  "esperado": "E - 5/2"
+ },
+ {
+  "id": 403,
+  "nivel": 9,
+  "tema": "taylor y sumatorias",
+  "entrada": "sumatoria 1/k^2, k, 1, oo",
+  "modo": "expr",
+  "esperado": "pi**2/6"
+ },
+ {
+  "id": 404,
+  "nivel": 9,
+  "tema": "extremos",
+  "entrada": "lagrange 3x+4y; x^2+y^2=25",
+  "modo": "clave",
+  "esperado": "25",
+  "clave": "maximo"
+ },
+ {
+  "id": 405,
+  "nivel": 9,
+  "tema": "varias variables",
+  "entrada": "integral doble x*e^(x*y), y, 0, 1, x, 0, 1",
+  "modo": "expr",
+  "esperado": "E - 2"
+ },
+ {
+  "id": 406,
+  "nivel": 9,
+  "tema": "algebra lineal",
+  "entrada": "det [[1,2,0,1],[0,1,3,0],[2,0,1,1],[1,1,0,2]]",
+  "modo": "expr",
+  "esperado": "16"
+ },
+ {
+  "id": 407,
+  "nivel": 9,
+  "tema": "edo",
+  "entrada": "edo x*y'-2y=x^3",
+  "modo": "edo_general",
+  "esperado": "x**3 + C1*x**2",
+  "edo": "Eq(x*Derivative(y(x), x) - 2*y(x), x**3)"
+ },
+ {
+  "id": 408,
+  "nivel": 9,
+  "tema": "metodos numericos",
+  "entrada": "secante sen(x)-x/2, 1.5, 2",
+  "modo": "numero",
+  "esperado": "1.89549426703398",
+  "tol": 1e-06
+ },
+ {
+  "id": 409,
+  "nivel": 9,
+  "tema": "complejos y circuitos",
+  "entrada": "fasor 220@0 - 220@-120",
+  "modo": "numero",
+  "esperado": "330 + 110*sqrt(3)*I",
+  "tol": 1e-06
+ },
+ {
+  "id": 410,
+  "nivel": 9,
+  "tema": "algebra",
+  "entrada": "simplificar (1-cos(2x))/sen(2x)",
+  "modo": "expr",
+  "esperado": "tan(x)"
+ },
+ {
+  "id": 411,
+  "nivel": 9,
+  "tema": "ecuaciones",
+  "entrada": "resolver 9^x-4*3^x+3=0",
+  "modo": "conjunto",
+  "esperado": "[0, 1]"
+ },
+ {
+  "id": 412,
+  "nivel": 9,
+  "tema": "limites",
+  "entrada": "limite (senh(x)-x)/x^3, x->0",
+  "modo": "expr",
+  "esperado": "1/6"
+ },
+ {
+  "id": 413,
+  "nivel": 9,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar sec(x)",
+  "modo": "antiderivada",
+  "esperado": "log(1/cos(x) + tan(x))"
+ },
+ {
+  "id": 414,
+  "nivel": 9,
+  "tema": "integrales definidas",
+  "entrada": "integrar sen(x)/x, x, 0, 1",
+  "modo": "numero",
+  "esperado": "0.946083070367183",
+  "tol": 1e-06
+ },
+ {
+  "id": 415,
+  "nivel": 9,
+  "tema": "varias variables",
+  "entrada": "integral triple z, z, 0, x+y, y, 0, 1, x, 0, 1",
+  "modo": "expr",
+  "esperado": "7/12"
+ },
+ {
+  "id": 416,
+  "nivel": 9,
+  "tema": "algebra lineal",
+  "entrada": "rango [[1,2,1,0],[2,1,0,1],[3,3,1,1],[1,-1,-1,1]]",
+  "modo": "expr",
+  "esperado": "2"
+ },
+ {
+  "id": 417,
+  "nivel": 9,
+  "tema": "edo",
+  "entrada": "edo y''+9y=cos(t)",
+  "modo": "edo_general",
+  "esperado": "C1*cos(3*t) + C2*sin(3*t) + cos(t)/8",
+  "edo": "Eq(9*y(t) + Derivative(y(t), (t, 2)), cos(t))"
+ },
+ {
+  "id": 418,
+  "nivel": 9,
+  "tema": "metodos numericos",
+  "entrada": "secante x^4-x-10, 1.5, 2",
+  "modo": "numero",
+  "esperado": "1.85558452864094",
+  "tol": 1e-06
+ },
+ {
+  "id": 419,
+  "nivel": 9,
+  "tema": "algebra",
+  "entrada": "fracciones parciales (x^2+2x+3)/((x+1)(x^2+1))",
+  "modo": "expr",
+  "esperado": "1/(x + 1) + 2/(x**2 + 1)"
+ },
+ {
+  "id": 420,
+  "nivel": 9,
+  "tema": "ecuaciones",
+  "entrada": "resolver x/(x-1)+2/(x+1)=1",
+  "modo": "conjunto",
+  "esperado": "[1/3]"
+ },
+ {
+  "id": 421,
+  "nivel": 9,
+  "tema": "limites",
+  "entrada": "limite cot(x)-1/x, x->0",
+  "modo": "expr",
+  "esperado": "0"
+ },
+ {
+  "id": 422,
+  "nivel": 9,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar ln(x)^2",
+  "modo": "antiderivada",
+  "esperado": "x*log(x)**2 - 2*x*log(x) + 2*x"
+ },
+ {
+  "id": 423,
+  "nivel": 9,
+  "tema": "integrales definidas",
+  "entrada": "integrar e^(-x^2), x, 0, 1",
+  "modo": "numero",
+  "esperado": "0.746824132812427",
+  "tol": 1e-06
+ },
+ {
+  "id": 424,
+  "nivel": 9,
+  "tema": "algebra lineal",
+  "entrada": "inversa [[cos(x), -sen(x)],[sen(x), cos(x)]]",
+  "modo": "matriz",
+  "esperado": "[[cos(x), sin(x)], [-sin(x), cos(x)]]"
+ },
+ {
+  "id": 425,
+  "nivel": 9,
+  "tema": "edo",
+  "entrada": "edo y'=e^(x-y)",
+  "modo": "edo_general",
+  "esperado": "log(exp(x) + C1)",
+  "edo": "Eq(Derivative(y(x), x), exp(x - y(x)))"
+ },
+ {
+  "id": 426,
+  "nivel": 9,
+  "tema": "metodos numericos",
+  "entrada": "trapecio e^(-x^2), 0, 1, 4",
+  "modo": "numero",
+  "esperado": "0.742984097800381",
+  "tol": 1e-09
+ },
+ {
+  "id": 427,
+  "nivel": 9,
+  "tema": "ecuaciones",
+  "entrada": "resolver x^3-2x^2-x+2>0",
+  "modo": "intervalo",
+  "esperado": "Union(Interval.open(-1, 1), Interval.open(2, oo))"
+ },
+ {
+  "id": 428,
+  "nivel": 9,
+  "tema": "integrales definidas",
+  "entrada": "area x^2-4, 0, -3, 3",
+  "modo": "expr",
+  "esperado": "46/3"
+ },
+ {
+  "id": 429,
+  "nivel": 9,
+  "tema": "algebra lineal",
+  "entrada": "det [[2,-1,0,0],[-1,2,-1,0],[0,-1,2,-1],[0,0,-1,2]]",
+  "modo": "expr",
+  "esperado": "5"
+ },
+ {
+  "id": 430,
+  "nivel": 9,
+  "tema": "edo",
+  "entrada": "edo y''+2y'+y=0; y(0)=1; y'(0)=-3",
+  "modo": "expr",
+  "esperado": "(1 - 2*x)*exp(-x)",
+  "edo": "Eq(y(x) + 2*Derivative(y(x), x) + Derivative(y(x), (x, 2)), 0)"
+ },
+ {
+  "id": 431,
+  "nivel": 9,
+  "tema": "metodos numericos",
+  "entrada": "trapecio sen(x), 0, pi, 6",
+  "modo": "numero",
+  "esperado": "1.95409723331371",
+  "tol": 1e-09
+ },
+ {
+  "id": 432,
+  "nivel": 9,
+  "tema": "integrales definidas",
+  "entrada": "integrar cos(x)^4, x, 0, pi/2",
+  "modo": "expr",
+  "esperado": "3*pi/16"
+ },
+ {
+  "id": 433,
+  "nivel": 9,
+  "tema": "algebra lineal",
+  "entrada": "gauss [[1,1,2,9],[2,4,-3,1],[3,6,-5,0]]",
+  "modo": "matriz",
+  "esperado": "[[1, 0, 0, 1], [0, 1, 0, 2], [0, 0, 1, 3]]"
+ },
+ {
+  "id": 434,
+  "nivel": 9,
+  "tema": "edo",
+  "entrada": "edo y''+y=0; y(0)=0; y(pi/2)=1",
+  "modo": "expr",
+  "esperado": "sin(x)",
+  "edo": "Eq(y(x) + Derivative(y(x), (x, 2)), 0)"
+ },
+ {
+  "id": 435,
+  "nivel": 9,
+  "tema": "metodos numericos",
+  "entrada": "simpson 1/(1+x^2), 0, 1, 4",
+  "modo": "numero",
+  "esperado": "0.785392156862745",
+  "tol": 1e-09
+ },
+ {
+  "id": 436,
+  "nivel": 9,
+  "tema": "edo",
+  "entrada": "edo y'-y=e^(2t); y(0)=1",
+  "modo": "expr",
+  "esperado": "exp(2*t)",
+  "edo": "Eq(-y(t) + Derivative(y(t), t), exp(2*t))"
+ },
+ {
+  "id": 437,
+  "nivel": 9,
+  "tema": "metodos numericos",
+  "entrada": "euler y'=x+y, 0, 1, 0.2, 1",
+  "modo": "numero",
+  "esperado": "2.97664",
+  "tol": 1e-09
+ },
+ {
+  "id": 438,
+  "nivel": 9,
+  "tema": "metodos numericos",
+  "entrada": "euler y'=-2x*y, 0, 1, 0.1, 0.5",
+  "modo": "numero",
+  "esperado": "0.81360384",
+  "tol": 1e-09
+ },
+ {
+  "id": 439,
+  "nivel": 9,
+  "tema": "algebra",
+  "entrada": "fracciones parciales (x^3+2)/(x^2-1)",
+  "modo": "expr",
+  "esperado": "x + 3/(2*(x - 1)) - 1/(2*(x + 1))"
+ },
+ {
+  "id": 440,
+  "nivel": 9,
+  "tema": "ecuaciones",
+  "entrada": "resolver 3x+2y-z=1; 2x-2y+4z=-2; -x+y/2-z=0",
+  "modo": "dict",
+  "esperado": "{x: 1, y: -2, z: -2}"
+ },
+ {
+  "id": 441,
+  "nivel": 9,
+  "tema": "limites",
+  "entrada": "limite cos(x)^(1/x^2), x->0",
+  "modo": "expr",
+  "esperado": "exp(-1/2)"
+ },
+ {
+  "id": 442,
+  "nivel": 9,
+  "tema": "derivadas",
+  "entrada": "derivar sen(x)^x",
+  "modo": "expr",
+  "esperado": "sin(x)**x*(log(sin(x)) + x*cos(x)/sin(x))"
+ },
+ {
+  "id": 443,
+  "nivel": 9,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar e^(2x)*cos(3x)",
+  "modo": "antiderivada",
+  "esperado": "exp(2*x)*(2*cos(3*x) + 3*sin(3*x))/13"
+ },
+ {
+  "id": 444,
+  "nivel": 9,
+  "tema": "integrales definidas",
+  "entrada": "integrar e^(-x^2), x, -oo, oo",
+  "modo": "expr",
+  "esperado": "sqrt(pi)"
+ },
+ {
+  "id": 445,
+  "nivel": 9,
+  "tema": "taylor y sumatorias",
+  "entrada": "sumatoria (-1)^(k+1)/k, k, 1, oo",
+  "modo": "expr",
+  "esperado": "log(2)"
+ },
+ {
+  "id": 446,
+  "nivel": 9,
+  "tema": "extremos",
+  "entrada": "extremos x^4+y^4-4x*y",
+  "modo": "conjunto",
+  "esperado": "[(0, 0), (1, 1), (-1, -1)]"
+ },
+ {
+  "id": 447,
+  "nivel": 9,
+  "tema": "varias variables",
+  "entrada": "laplaciano 1/sqrt(x^2+y^2+z^2)",
+  "modo": "expr",
+  "esperado": "0"
+ },
+ {
+  "id": 448,
+  "nivel": 9,
+  "tema": "algebra lineal",
+  "entrada": "det [[1,1,1],[x,y,z],[x^2,y^2,z^2]]",
+  "modo": "expr",
+  "esperado": "(y - x)*(z - x)*(z - y)"
+ },
+ {
+  "id": 449,
+  "nivel": 9,
+  "tema": "edo",
+  "entrada": "edo y''+y=sen(x)",
+  "modo": "edo_general",
+  "esperado": "C1*cos(x) + C2*sin(x) - x*cos(x)/2",
+  "edo": "Eq(y(x) + Derivative(y(x), (x, 2)), sin(x))"
+ },
+ {
+  "id": 450,
+  "nivel": 9,
+  "tema": "laplace",
+  "entrada": "laplace inversa e^(-2s)/s^2",
+  "modo": "expr",
+  "esperado": "(t - 2)*Heaviside(t - 2)"
+ },
+ {
+  "id": 451,
+  "nivel": 10,
+  "tema": "fourier",
+  "entrada": "fourier x^2, x, -pi, pi, 3",
+  "modo": "expr",
+  "esperado": "pi**2/3 - 4*cos(x) + cos(2*x) - 4*cos(3*x)/9"
+ },
+ {
+  "id": 452,
+  "nivel": 10,
+  "tema": "metodos numericos",
+  "entrada": "simpson sqrt(1+x^3), 0, 1, 4",
+  "modo": "numero",
+  "esperado": "1.1113632322639",
+  "tol": 1e-09
+ },
+ {
+  "id": 453,
+  "nivel": 10,
+  "tema": "ecuaciones",
+  "entrada": "resolver x^5-x^4-x+1=0",
+  "modo": "conjunto",
+  "esperado": "[-1, 1, -I, I]"
+ },
+ {
+  "id": 454,
+  "nivel": 10,
+  "tema": "limites",
+  "entrada": "limite 1/x-1/(e^x-1), x->0",
+  "modo": "expr",
+  "esperado": "1/2"
+ },
+ {
+  "id": 455,
+  "nivel": 10,
+  "tema": "derivadas",
+  "entrada": "derivar implicita x^2*y^2+x*y=2",
+  "modo": "expr",
+  "esperado": "-y/x"
+ },
+ {
+  "id": 456,
+  "nivel": 10,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar x/((x-1)*(x+2)^2)",
+  "modo": "antiderivada",
+  "esperado": "log(x - 1)/9 - log(x + 2)/9 - 2/(3*(x + 2))"
+ },
+ {
+  "id": 457,
+  "nivel": 10,
+  "tema": "integrales definidas",
+  "entrada": "integrar 1/(x*ln(x)^2), x, e, oo",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 458,
+  "nivel": 10,
+  "tema": "taylor y sumatorias",
+  "entrada": "sumatoria (-1)^k/factorial(k), k, 0, oo",
+  "modo": "expr",
+  "esperado": "exp(-1)"
+ },
+ {
+  "id": 459,
+  "nivel": 10,
+  "tema": "extremos",
+  "entrada": "extremos x^2*y-x^2-2y^2",
+  "modo": "conjunto",
+  "esperado": "[(0, 0), (2, 1), (-2, 1)]"
+ },
+ {
+  "id": 460,
+  "nivel": 10,
+  "tema": "varias variables",
+  "entrada": "integral doble x*y^2, x, y^2, 4, y, 0, 2",
+  "modo": "expr",
+  "esperado": "256/21"
+ },
+ {
+  "id": 461,
+  "nivel": 10,
+  "tema": "algebra lineal",
+  "entrada": "autovalores [[0,1,0],[0,0,1],[6,-11,6]]",
+  "modo": "conjunto",
+  "esperado": "[1, 2, 3]"
+ },
+ {
+  "id": 462,
+  "nivel": 10,
+  "tema": "edo",
+  "entrada": "edo y''-2y'+y=e^x",
+  "modo": "edo_general",
+  "esperado": "(C1 + C2*x)*exp(x) + x**2*exp(x)/2",
+  "edo": "Eq(y(x) - 2*Derivative(y(x), x) + Derivative(y(x), (x, 2)), exp(x))"
+ },
+ {
+  "id": 463,
+  "nivel": 10,
+  "tema": "laplace",
+  "entrada": "laplace inversa 5/((s+1)*(s^2+4))",
+  "modo": "expr",
+  "esperado": "exp(-t) - cos(2*t) + sin(2*t)/2"
+ },
+ {
+  "id": 464,
+  "nivel": 10,
+  "tema": "fourier",
+  "entrada": "fourier x, x, -1, 1, 3",
+  "modo": "expr",
+  "esperado": "2*sin(pi*x)/pi - sin(2*pi*x)/pi + 2*sin(3*pi*x)/(3*pi)"
+ },
+ {
+  "id": 465,
+  "nivel": 10,
+  "tema": "metodos numericos",
+  "entrada": "rk4 y'=y, 0, 1, 0.5, 1",
+  "modo": "numero",
+  "esperado": "2.71734619140625",
+  "tol": 1e-09
+ },
+ {
+  "id": 466,
+  "nivel": 10,
+  "tema": "limites",
+  "entrada": "limite (arcsen(x)-x)/x^3, x->0",
+  "modo": "expr",
+  "esperado": "1/6"
+ },
+ {
+  "id": 467,
+  "nivel": 10,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar x*arctg(x)",
+  "modo": "antiderivada",
+  "esperado": "(x**2 + 1)*atan(x)/2 - x/2"
+ },
+ {
+  "id": 468,
+  "nivel": 10,
+  "tema": "integrales definidas",
+  "entrada": "integrar x^3*e^(-x^2), x, 0, oo",
+  "modo": "expr",
+  "esperado": "1/2"
+ },
+ {
+  "id": 469,
+  "nivel": 10,
+  "tema": "extremos",
+  "entrada": "lagrange x^2+2y^2; x^2+y^2=1",
+  "modo": "conjunto",
+  "esperado": "[(0, 1), (0, -1), (1, 0), (-1, 0)]"
+ },
+ {
+  "id": 470,
+  "nivel": 10,
+  "tema": "edo",
+  "entrada": "edo y'+y*tg(x)=cos(x)",
+  "modo": "edo_general",
+  "esperado": "(x + C1)*cos(x)",
+  "edo": "Eq(y(x)*tan(x) + Derivative(y(x), x), cos(x))"
+ },
+ {
+  "id": 471,
+  "nivel": 10,
+  "tema": "laplace",
+  "entrada": "laplace t^2*cos(t)",
+  "modo": "expr",
+  "esperado": "2*s*(s**2 - 3)/(s**2 + 1)**3"
+ },
+ {
+  "id": 472,
+  "nivel": 10,
+  "tema": "metodos numericos",
+  "entrada": "regresion (1,3), (2,5), (3,6), (4,9), (5,10)",
+  "modo": "clave",
+  "esperado": "81/83",
+  "tol": 1e-06,
+  "clave": "r2"
+ },
+ {
+  "id": 473,
+  "nivel": 10,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar (2x+3)/(x^2+2x+5)",
+  "modo": "antiderivada",
+  "esperado": "log(x**2 + 2*x + 5) + atan((x + 1)/2)/2"
+ },
+ {
+  "id": 474,
+  "nivel": 10,
+  "tema": "integrales definidas",
+  "entrada": "integrar ln(x)/x^2, x, 1, oo",
+  "modo": "expr",
+  "esperado": "1"
+ },
+ {
+  "id": 475,
+  "nivel": 10,
+  "tema": "extremos",
+  "entrada": "lagrange x^2+y^2; x*y=1",
+  "modo": "clave",
+  "esperado": "2",
+  "clave": "minimo"
+ },
+ {
+  "id": 476,
+  "nivel": 10,
+  "tema": "edo",
+  "entrada": "edo y''-4y'+13y=0; y(0)=1; y'(0)=2",
+  "modo": "expr",
+  "esperado": "exp(2*x)*cos(3*x)",
+  "edo": "Eq(13*y(x) - 4*Derivative(y(x), x) + Derivative(y(x), (x, 2)), 0)"
+ },
+ {
+  "id": 477,
+  "nivel": 10,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar e^(sqrt(x))",
+  "modo": "antiderivada",
+  "esperado": "2*(sqrt(x) - 1)*exp(sqrt(x))"
+ },
+ {
+  "id": 478,
+  "nivel": 10,
+  "tema": "extremos",
+  "entrada": "lagrange x^2+y^2+z^2; x+2y+3z=14",
+  "modo": "conjunto",
+  "esperado": "[(1, 2, 3)]"
+ },
+ {
+  "id": 479,
+  "nivel": 10,
+  "tema": "edo",
+  "entrada": "edo y'=y*(1-y); y(0)=1/2",
+  "modo": "expr",
+  "esperado": "1/(1 + exp(-x))",
+  "edo": "Eq(Derivative(y(x), x), (1 - y(x))*y(x))"
+ },
+ {
+  "id": 480,
+  "nivel": 10,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar 1/(x^2*sqrt(x^2+1))",
+  "modo": "antiderivada",
+  "esperado": "-sqrt(x**2 + 1)/x"
+ },
+ {
+  "id": 481,
+  "nivel": 10,
+  "tema": "edo",
+  "entrada": "edo y''+3y'+2y=4; y(0)=0; y'(0)=0",
+  "modo": "expr",
+  "esperado": "2 - 4*exp(-x) + 2*exp(-2*x)",
+  "edo": "Eq(2*y(x) + 3*Derivative(y(x), x) + Derivative(y(x), (x, 2)), 4)"
+ },
+ {
+  "id": 482,
+  "nivel": 10,
+  "tema": "limites",
+  "entrada": "limite ((1+x)^(1/x)-e)/x, x->0",
+  "modo": "expr",
+  "esperado": "-E/2"
+ },
+ {
+  "id": 483,
+  "nivel": 10,
+  "tema": "derivadas",
+  "entrada": "derivar arccos(x)/sqrt(1-x^2)",
+  "modo": "expr",
+  "esperado": "-1/(1 - x**2) + x*acos(x)/(1 - x**2)**(3/2)"
+ },
+ {
+  "id": 484,
+  "nivel": 10,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar cos(ln(x))",
+  "modo": "antiderivada",
+  "esperado": "x*(cos(log(x)) + sin(log(x)))/2"
+ },
+ {
+  "id": 485,
+  "nivel": 10,
+  "tema": "extremos",
+  "entrada": "lagrange x*y*z; x^2+y^2+z^2=3",
+  "modo": "clave",
+  "esperado": "1",
+  "clave": "maximo"
+ },
+ {
+  "id": 486,
+  "nivel": 10,
+  "tema": "varias variables",
+  "entrada": "integral doble x^2+y^2, y, 0, sqrt(1-x^2), x, 0, 1",
+  "modo": "expr",
+  "esperado": "pi/8"
+ },
+ {
+  "id": 487,
+  "nivel": 10,
+  "tema": "edo",
+  "entrada": "edo y''+4y=sen(t); y(0)=0; y'(0)=0",
+  "modo": "expr",
+  "esperado": "sin(t)/3 - sin(2*t)/6",
+  "edo": "Eq(4*y(t) + Derivative(y(t), (t, 2)), sin(t))"
+ },
+ {
+  "id": 488,
+  "nivel": 10,
+  "tema": "fourier",
+  "entrada": "fourier abs(x), x, -pi, pi, 3",
+  "modo": "expr",
+  "esperado": "pi/2 - 4*cos(x)/pi - 4*cos(3*x)/(9*pi)"
+ },
+ {
+  "id": 489,
+  "nivel": 10,
+  "tema": "metodos numericos",
+  "entrada": "rk4 y'=y-x^2+1, 0, 0.5, 0.2, 2",
+  "modo": "numero",
+  "esperado": "5.30536300069265",
+  "tol": 1e-09
+ },
+ {
+  "id": 490,
+  "nivel": 10,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar 1/(x^2+1)^2",
+  "modo": "antiderivada",
+  "esperado": "x/(2*(x**2 + 1)) + atan(x)/2"
+ },
+ {
+  "id": 491,
+  "nivel": 10,
+  "tema": "extremos",
+  "entrada": "extremos 2x^3+6x*y^2-3y^3-150x",
+  "modo": "conjunto",
+  "esperado": "[(5, 0), (-5, 0), (3, 4), (-3, -4)]"
+ },
+ {
+  "id": 492,
+  "nivel": 10,
+  "tema": "varias variables",
+  "entrada": "jacobiano [x*cos(y)*sen(z), x*sen(y)*sen(z), x*cos(z)]",
+  "modo": "matriz",
+  "esperado": "[[cos(y)*sin(z), -x*sin(y)*sin(z), x*cos(y)*cos(z)], [sin(y)*sin(z), x*cos(y)*sin(z), x*sin(y)*cos(z)], [cos(z), 0, -x*sin(z)]]"
+ },
+ {
+  "id": 493,
+  "nivel": 10,
+  "tema": "edo",
+  "entrada": "edo x^2*y''-2x*y'+2y=0",
+  "modo": "edo_general",
+  "esperado": "C1*x + C2*x**2",
+  "edo": "Eq(x**2*Derivative(y(x), (x, 2)) - 2*x*Derivative(y(x), x) + 2*y(x), 0)"
+ },
+ {
+  "id": 494,
+  "nivel": 10,
+  "tema": "fourier",
+  "entrada": "fourier 1-x^2, x, -1, 1, 2",
+  "modo": "expr",
+  "esperado": "2/3 + 4*cos(pi*x)/pi**2 - cos(2*pi*x)/pi**2"
+ },
+ {
+  "id": 495,
+  "nivel": 10,
+  "tema": "metodos numericos",
+  "entrada": "rk4 y'=-y+sen(x), 0, 0, 0.2, 1",
+  "modo": "numero",
+  "esperado": "0.334526496796523",
+  "tol": 1e-09
+ },
+ {
+  "id": 496,
+  "nivel": 10,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar x^2/sqrt(1-x^2)",
+  "modo": "antiderivada",
+  "esperado": "(asin(x) - x*sqrt(1 - x**2))/2"
+ },
+ {
+  "id": 497,
+  "nivel": 10,
+  "tema": "edo",
+  "entrada": "edo y''-y'-2y=4x; y(0)=0; y'(0)=1",
+  "modo": "expr",
+  "esperado": "2*exp(2*x)/3 - 5*exp(-x)/3 - 2*x + 1",
+  "edo": "Eq(-2*y(x) - Derivative(y(x), x) + Derivative(y(x), (x, 2)), 4*x)"
+ },
+ {
+  "id": 498,
+  "nivel": 10,
+  "tema": "fourier",
+  "entrada": "fourier u(x), x, -pi, pi, 3",
+  "modo": "expr",
+  "esperado": "1/2 + 2*sin(x)/pi + 2*sin(3*x)/(3*pi)"
+ },
+ {
+  "id": 499,
+  "nivel": 10,
+  "tema": "integrales indefinidas",
+  "entrada": "integrar 1/(x^3+1)",
+  "modo": "antiderivada",
+  "esperado": "log(x + 1)/3 - log(x**2 - x + 1)/6 + sqrt(3)*atan((2*x - 1)/sqrt(3))/3"
+ },
+ {
+  "id": 500,
+  "nivel": 10,
+  "tema": "edo",
+  "entrada": "edo y'''-6y''+11y'-6y=0; y(0)=0; y'(0)=0; y''(0)=2",
+  "modo": "expr",
+  "esperado": "exp(x) - 2*exp(2*x) + exp(3*x)",
+  "edo": "Eq(-6*y(x) + 11*Derivative(y(x), x) - 6*Derivative(y(x), (x, 2)) + Derivative(y(x), (x, 3)), 0)"
+ }
+]

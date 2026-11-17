@@ -1,0 +1,2 @@
+-keepclassmembers class ar.ingecalc.app.Puente { @android.webkit.JavascriptInterface <methods>; }
+-keep class com.chaquo.python.** { *; }

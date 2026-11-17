@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>IngeCalc</title>
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="mathlive/mathlive-static.css">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- 1. CÁMARA -->
+<section id="p-camara" class="pantalla oscura">
+  <video id="video" playsinline muted autoplay poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></video>
+  <div id="sin-camara" class="sin-camara oculto">
+    <p id="sin-camara-msj">No se pudo abrir la cámara.</p>
+    <button class="boton-claro" data-ir="calc">Usar la calculadora</button>
+  </div>
+  <div class="cam-arriba">
+    <button class="icono-cam" id="btn-menu" aria-label="Menú">☰</button>
+    <span class="marca-cam"><span class="logo">∫</span> IngeCalc</span>
+    <button class="icono-cam" data-ir="ayuda" aria-label="Ayuda">?</button>
+  </div>
+  <div id="marco" class="marco">
+    <span class="esq a"></span><span class="esq b"></span><span class="esq c"></span><span class="esq d"></span>
+    <span class="mira">+</span>
+  </div>
+  <p class="cam-consejo">Encuadrá un ejercicio impreso o escrito con letra clara</p>
+  <div class="cam-abajo">
+    <button class="cam-lateral" data-ir="calc"><span class="ic">⌨</span><span>Calculadora</span></button>
+    <button id="disparador" class="disparador" aria-label="Sacar foto"></button>
+    <button class="cam-lateral" data-ir="temas"><span class="ic">📚</span><span>Temas</span></button>
+  </div>
+  <div class="cam-extra">
+    <button class="icono-cam" id="btn-galeria" aria-label="Elegir imagen">🖼</button>
+    <button class="icono-cam" id="btn-linterna" aria-label="Linterna">⚡</button>
+  </div>
+</section>
+
+<!-- 2. CALCULADORA -->
+<section id="p-calc" class="pantalla oculto">
+  <header class="cabecera">
+    <button class="volver" data-atras aria-label="Volver">←</button>
+    <h1>Calculadora</h1>
+    <button class="volver" data-ir="temas" aria-label="Temas">📚</button>
+  </header>
+  <div class="zona-entrada" id="zona-entrada">
+    <!-- Modo fórmula: editor visual (fracciones, raíces y potencias se dibujan mientras se escribe) -->
+    <math-field id="campo" math-virtual-keyboard-policy="manual" aria-label="Ejercicio"></math-field>
+    <!-- Modo texto: comandos (derivar, limite, edo, ...) -->
+    <div id="previa" class="previa-grande oculto"><span class="placeholder">Escribí un ejercicio…</span></div>
+    <textarea id="entrada" class="oculto" rows="1" inputmode="none" spellcheck="false" autocapitalize="off" autocomplete="off"
+      aria-label="Ejercicio en texto"></textarea>
+    <div id="vivo" class="vivo"></div>
+    <div id="aviso-entrada" class="aviso-entrada"></div>
+  </div>
+  <div class="teclado" id="teclado">
+    <div class="tec-barra">
+      <button data-accion="abc" class="tb">abc</button>
+      <button data-accion="historial" class="tb" aria-label="Historial">🕘</button>
+      <button data-accion="izq" class="tb" aria-label="Mover a la izquierda">←</button>
+      <button data-accion="der" class="tb" aria-label="Mover a la derecha">→</button>
+      <button data-accion="resolver" class="tb tb-ok" aria-label="Resolver">⏎</button>
+      <button data-accion="borrar" class="tb" aria-label="Borrar">⌫</button>
+    </div>
+    <div class="tec-pestanas" id="tec-pestanas"></div>
+    <div class="tec-grilla" id="tec-grilla"></div>
+  </div>
+</section>
+
+<!-- 3. SOLUCIONES -->
+<section id="p-soluciones" class="pantalla gris oculto">
+  <header class="cabecera">
+    <button class="volver" data-atras aria-label="Volver">←</button>
+    <h1>Soluciones</h1>
+    <span class="hueco"></span>
+  </header>
+  <div class="lista-sol" id="lista-sol"></div>
+</section>
+
+<!-- 4. PASO A PASO -->
+<section id="p-pasos" class="pantalla oculto">
+  <header class="cabecera">
+    <button class="volver" data-atras aria-label="Volver">←</button>
+    <h1 id="pasos-titulo">Paso a paso</h1>
+    <span class="hueco"></span>
+  </header>
+  <div class="contenido" id="pasos-contenido"></div>
+</section>
+
+<!-- 5. TEMAS -->
+<section id="p-temas" class="pantalla gris oculto">
+  <header class="cabecera">
+    <button class="volver" data-atras aria-label="Volver">←</button>
+    <h1>Temas de ingeniería</h1>
+    <span class="hueco"></span>
+  </header>
+  <nav id="temas" class="temas"></nav>
+  <div id="plantillas" class="plantillas"></div>
+</section>
+
+<!-- 6. HISTORIAL -->
+<section id="p-historial" class="pantalla gris oculto">
+  <header class="cabecera">
+    <button class="volver" data-atras aria-label="Volver">←</button>
+    <h1>Historial</h1>
+    <button class="volver" id="borrar-historial" aria-label="Borrar historial">🗑</button>
+  </header>
+  <div id="lista-historial" class="lista-historial"></div>
+</section>
+
+<!-- 7. AYUDA -->
+<section id="p-ayuda" class="pantalla oculto">
+  <header class="cabecera">
+    <button class="volver" data-atras aria-label="Volver">←</button>
+    <h1>Cómo se usa</h1>
+    <span class="hueco"></span>
+  </header>
+  <div class="contenido ayuda" id="ayuda"></div>
+</section>
+
+<div id="menu" class="menu oculto">
+  <div class="menu-caja">
+    <button data-ir="calc">⌨  Calculadora</button>
+    <button data-ir="temas">📚  Temas de ingeniería</button>
+    <button data-ir="historial">🕘  Historial</button>
+    <button data-ir="ayuda">?  Cómo se usa</button>
+  </div>
+</div>
+<div id="toast" class="toast oculto"></div>
+
+<script src="katex/katex.min.js"></script>
+<script src="mathlive/mathlive.min.js"></script>
+<script src="grafico.js"></script>
+<script src="temas.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
